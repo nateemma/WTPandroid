@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nateemma.wtp"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <!-- Permissions for reading/saving files, making calls -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- The main Screen -->
+        <activity
+            android:name="com.nateemma.wtp.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.HOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+            
+            <!-- API Key for use of Maps -->
+            <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="8F:69:D9:18:64:7D:A0:75:2C:9B:D7:17:BF:97:71:17:62:63:FA:37" />
+            
+        </activity>
+
+        <!-- The Splash screen Activity -->
+        <!--
+        <activity
+            android:name="com.nateemma.wtp.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.SPLASH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+
+
+        <!-- Steam Boiler Data Entry -->
+        <activity
+            android:name="com.nateemma.wtp.BoilerInputActivity"
+            android:label="@string/boilerInputActivity"
+            android:parentActivityName="com.nateemma.wtp.MainActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nateemma.wtp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.BOILER_INPUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Steam Boiler Results -->
+        <activity
+            android:name="com.nateemma.wtp.BoilerResultsActivity"
+            android:label="@string/boilerResultsActivity"
+            android:parentActivityName="com.nateemma.wtp.BoilerInputActivity"
+            android:screenOrientation="landscape" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nateemma.wtp.BoilerInputActivity" />
+
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.BOILER_RESULTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Cooling Water Data Entry -->
+        <activity
+            android:name="com.nateemma.wtp.CoolingInputActivity"
+            android:label="@string/coolingInputActivity"
+            android:parentActivityName="com.nateemma.wtp.MainActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nateemma.wtp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.COOLING_INPUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Cooling Water Results -->
+        <activity
+            android:name="com.nateemma.wtp.CoolingResultsActivity"
+            android:label="@string/coolingResultsActivity"
+            android:parentActivityName="com.nateemma.wtp.CoolingInputActivity"
+            android:screenOrientation="landscape" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nateemma.wtp.CoolingInputActivity" />
+
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.COOLING_RESULTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- About Us Activity -->
+        <activity
+            android:name="com.nateemma.wtp.AboutActivity"
+            android:label="@string/aboutActivity"
+            android:parentActivityName="com.nateemma.wtp.MainActivity"
+            android:screenOrientation="landscape" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nateemma.wtp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Contact Us Activity -->
+        <activity
+            android:name="com.nateemma.wtp.ContactActivity"
+            android:label="@string/aboutActivity"
+            android:parentActivityName="com.nateemma.wtp.MainActivity"
+            android:screenOrientation="landscape" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nateemma.wtp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.CONTACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Help Activity -->
+        <activity
+            android:name="com.nateemma.wtp.HelpActivity"
+            android:label="@string/helpActivity"
+            android:parentActivityName="com.nateemma.wtp.MainActivity"
+            android:screenOrientation="landscape" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nateemma.wtp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.HELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Placeholder Activity for functions not yet implemented -->
+        <activity
+            android:name="com.nateemma.wtp.TBDActivity"
+            android:label="TBD"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.TBD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
