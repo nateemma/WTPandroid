@@ -145,7 +145,8 @@ public class ContactActivity extends Activity {
 		try{
 			Log.v(TAG, "sendEmail: "+emailStr);
 			Intent i = new Intent(Intent.ACTION_SEND);
-			i.putExtra(Intent.EXTRA_EMAIL, emailStr);
+			i.setType("message/rfc822");
+			i.putExtra(Intent.EXTRA_EMAIL, new String[] {emailStr});
 			startActivity(i);		
 		} catch (Exception e){
 			Log.e(TAG, "sendEmail() exception: "+e.toString());

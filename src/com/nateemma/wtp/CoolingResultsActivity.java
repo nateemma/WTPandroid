@@ -338,7 +338,7 @@ public class CoolingResultsActivity extends Activity {
 	    //rowFormat = "<TR><TD>" +  + "<TD>" +  + "<TD>" +  + "<TD>" +  + "<TD>" +  + "<TD>" +  + "</TR>";
 	    
 	    row = "<TR><TD>" + 
-	           "<TD>" + "WTPHS2097" + "<TD>" + 
+	           "WTPHS2097" + "<TD>" + 
 	           round1(mCoolingModel.hs2097Dosage) + "<TD>" + 
 	           round1(mCoolingModel.hs2097Usage) + "<TD>" + 
 	           //round1(mCoolingModel.hs2097CostKg) + "<TD>" + 
@@ -347,7 +347,7 @@ public class CoolingResultsActivity extends Activity {
 	    htmlString += row;
 	    
 	    row = "<TR><TD>" + 
-	           "<TD>" + "WTPHS4390" + "<TD>" + 
+	           "WTPHS4390" + "<TD>" + 
 	           round1(mCoolingModel.hs4390Dosage) + "<TD>" + 
 	           round1(mCoolingModel.hs4390Usage) + "<TD>" + 
 	           //round1(mCoolingModel.hs4390CostKg) + "<TD>" + 
@@ -356,7 +356,7 @@ public class CoolingResultsActivity extends Activity {
 	    htmlString += row;
 	    
 	    row = "<TR><TD>" + 
-	           "<TD>" + "WTPHS3990" + "<TD>" + 
+	           "WTPHS3990" + "<TD>" + 
 	           round1(mCoolingModel.hs3990Dosage) + "<TD>" + 
 	           round1(mCoolingModel.hs3990Usage) + "<TD>" + 
 	           //round1(mCoolingModel.hs3990CostKg) + "<TD>" + 
@@ -373,7 +373,7 @@ public class CoolingResultsActivity extends Activity {
 	    //rowFormat = "<TR><TD>" +  + "<TD>" +  + "<TD>" +  + "<TD>" +  + "<TD>" +  + "<TD>" +  + "</TR>";
 	    
 	    row = "<TR><TD>" + 
-	           "<TD>" + "WTPCS4400" + "<TD>" + 
+	           "WTPCS4400" + "<TD>" + 
 	           round1(mCoolingModel.cs4400Dosage) + "<TD>" + 
 	           round1(mCoolingModel.cs4400Usage) + "<TD>" + 
 	           //round1(mCoolingModel.cs4400CostKg) + "<TD>" + 
@@ -382,7 +382,7 @@ public class CoolingResultsActivity extends Activity {
 	    htmlString += row;
 	    
 	    row = "<TR><TD>" + 
-	           "<TD>" + "WTPCS4802" + "<TD>" + 
+	           "WTPCS4802" + "<TD>" + 
 	           round1(mCoolingModel.cs4802Dosage) + "<TD>" + 
 	           round1(mCoolingModel.cs4802Usage) + "<TD>" + 
 	           //round1(mCoolingModel.cs4802CostKg) + "<TD>" + 
@@ -391,7 +391,7 @@ public class CoolingResultsActivity extends Activity {
 	    htmlString += row;
 	    
 	    row = "<TR><TD>" + 
-	           "<TD>" + "WTPCS4490" + "<TD>" + 
+	           "WTPCS4490" + "<TD>" + 
 	           round1(mCoolingModel.cs4490Dosage) + "<TD>" + 
 	           round1(mCoolingModel.cs4490Usage) + "<TD>" + 
 	           //round1(mCoolingModel.cs4490CostKg) + "<TD>" + 
@@ -400,7 +400,7 @@ public class CoolingResultsActivity extends Activity {
 	    htmlString += row;
 	    
 	    row = "<TR><TD>" + 
-	           "<TD>" + "WTPSCG1" + "<TD>" + 
+	           "WTPSCG1" + "<TD>" + 
 	           round1(mCoolingModel.scg1Dosage) + "<TD>" + 
 	           round1(mCoolingModel.scg1Usage) + "<TD>" + 
 	           //round1(mCoolingModel.scg1CostKg) + "<TD>" + 
@@ -409,7 +409,7 @@ public class CoolingResultsActivity extends Activity {
 	    htmlString += row;
 	    
 	    row = "<TR><TD>" + 
-	           "<TD>" + "WTPCSChlor" + "<TD>" + 
+	           "WTPCSChlor" + "<TD>" + 
 	           round1(mCoolingModel.cschlorDosage) + "<TD>" + 
 	           round1(mCoolingModel.cschlorUsage) + "<TD>" + 
 	           //round1(mCoolingModel.cschlorCostKg) + "<TD>" + 
@@ -418,7 +418,7 @@ public class CoolingResultsActivity extends Activity {
 	    htmlString += row;
 	    
 	    row = "<TR><TD>" + 
-	           "<TD>" + "WTPC42T" + "<TD>" + 
+	           "WTPC42T" + "<TD>" + 
 	           round1(mCoolingModel.c42tDosage) + "<TD>" + 
 	           round1(mCoolingModel.c42tUsage) + "<TD>" + 
 	           //round1(mCoolingModel.c42tCostKg) + "<TD>" + 
