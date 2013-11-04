@@ -119,6 +119,7 @@ public class ContactActivity extends Activity {
 	// launch browser to supplied address
 	private void browseUrl(String urlStr) {
 		try{
+			Log.v(TAG, "browseUrl: "+urlStr);
 			Intent i = new Intent(Intent.ACTION_VIEW);
 			i.setData(Uri.parse(urlStr));
 			startActivity(i);
@@ -130,6 +131,7 @@ public class ContactActivity extends Activity {
 	// launch dialer app to call supplied number
 	private void callNumber(String telStr) {
 		try{
+			Log.v(TAG, "callNumber: "+telStr);
 			Intent i = new Intent(Intent.ACTION_CALL);
 			i.setData(Uri.parse("tel:"+telStr));
 			startActivity(i);
@@ -141,6 +143,7 @@ public class ContactActivity extends Activity {
 	// launch email client with specified destination address
 	private void sendEmail(String emailStr) {
 		try{
+			Log.v(TAG, "sendEmail: "+emailStr);
 			Intent i = new Intent(Intent.ACTION_SEND);
 			i.putExtra(Intent.EXTRA_EMAIL, emailStr);
 			startActivity(i);		
@@ -154,6 +157,7 @@ public class ContactActivity extends Activity {
 		try{
 			String uri = "geo:0,0?q=" + addressStr.replace(" ", "+");
 			
+			Log.v(TAG, "mapAddress: "+uri);
 			Intent i = new Intent(Intent.ACTION_VIEW);
 			i.setData(Uri.parse(uri));
 			startActivity(i);
