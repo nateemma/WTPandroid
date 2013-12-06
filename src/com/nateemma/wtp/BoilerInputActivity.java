@@ -19,6 +19,8 @@ public class BoilerInputActivity extends Activity {
 	private static BoilerModel mBoilerModel = null;
 
 	private Context mContext;
+	
+	private String mEstType = ""; // estimate type (solid or liquid)
 
 	// Input Views
 	private static EditText vSite;
@@ -71,6 +73,12 @@ public class BoilerInputActivity extends Activity {
 
 			// load the initial data
 			loadData();
+			
+			// get the estimate type
+			mEstType = getIntent().getStringExtra(LocalIntents.ARG0);
+			if ((mEstType==null) || (mEstType.length()==0)){
+				mEstType = LocalIntents.SOLIDS;
+			}
 
 		} catch (Exception e){
 			Log.e(TAG, "onCreate() Error: "+e.toString());
@@ -327,7 +335,7 @@ public class BoilerInputActivity extends Activity {
 
 
 
-	// process input data and calculate products
+	// process input data, calculate products and launch appropriate  display activity for results
 	private void estimate(){
 		Log.d(TAG, "estimate()");
 		if (checkInputFields()){
@@ -335,12 +343,19 @@ public class BoilerInputActivity extends Activity {
 			mBoilerModel.calculateAmounts();
 			Log.v(TAG, "Launching Results Activity");
 			Intent intent = new Intent();
-			intent.setAction(LocalIntents.BOILER_RESULTS);
+			if (mEstType.equals(LocalIntents.SOLIDS)){
+				intent.setAction(LocalIntents.BOILER_SOLIDS_RESULTS);
+			} else if (mEstType.equals(LocalIntents.LIQUIDS)){
+				intent.setAction(LocalIntents.BOILER_LIQUIDS_RESULTS);
+			} else {
+				Log.e(TAG, "invalid estimate type: "+mEstType);
+				return;
+			}
 			try {
 				startActivity(intent);
 			} catch (Throwable t){
 				Log.e(TAG, "startActivity exception: " + t.toString());
-				Toast.makeText(mContext, "Error starting " + LocalIntents.BOILER_RESULTS, Toast.LENGTH_SHORT).show();
+				Toast.makeText(mContext, "Error starting Results activity: "+mEstType, Toast.LENGTH_SHORT).show();
 			}
 
 		} else {

@@ -17,7 +17,7 @@ import android.widget.Toast;
 // 11/2/13 - took out cost/kg and cost/annum columns. Just commented out for now
 
 // Class to implement display of Steam Cooling results
-public class CoolingResultsActivity extends Activity {
+public class CoolingSolidsResultsActivity extends Activity {
 
 
 	private static final String TAG = "CoolingResultsActivity";
@@ -83,7 +83,7 @@ public class CoolingResultsActivity extends Activity {
 			mContext = this;
 		    getActionBar().setDisplayHomeAsUpEnabled(true);
 
-			setContentView(R.layout.cooling_results);
+			setContentView(R.layout.cooling_solids_results);
 
 			// connect the views with the output fields
 			vOutHS2097Dosage = (TextView)findViewById(R.id.outHS2097Dosage);
@@ -439,7 +439,7 @@ public class CoolingResultsActivity extends Activity {
 	private Uri createAttachment(String contents) {
 		Uri attachUri=null;
 
-		String ATTACH_FILE = "cooling";
+		String ATTACH_FILE = "coolingsolids";
 		FileCache.init();
 		String attachPath = FileCache.getFilePath(ATTACH_FILE);
 		FileCache.writeTextFile(attachPath, contents);

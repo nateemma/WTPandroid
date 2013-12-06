@@ -75,6 +75,8 @@ public class CoolingModel {
 	public Double theoryQ4;
 	public Double theoryQ5;
 
+	// SOLIDS
+	
 	// Product-based values
 	public Double hs2097Dosage;
 	public Double hs2097Usage;
@@ -123,7 +125,77 @@ public class CoolingModel {
 	//public Double c42tCostKg;
 	//public Double c42tCostAnnum;
 
-
+	// LIQUIDS
+	
+	// Inhibitors
+	public Double h207Dosage;
+	public Double h207Usage;
+	
+	public Double h2073Dosage;
+	public Double h2073Usage;
+	
+	public Double h280Dosage;
+	public Double h280Usage;
+	
+	public Double h2805Dosage;
+	public Double h2805Usage;
+	
+	public Double h390Dosage;
+	public Double h390Usage;
+	
+	public Double h3905Dosage;
+	public Double h3905Usage;
+	
+	public Double h391Dosage;
+	public Double h391Usage;
+	
+	public Double h423Dosage;
+	public Double h423Usage;
+	
+	public Double h425Dosage;
+	public Double h425Usage;
+	
+	public Double h4255Dosage;
+	public Double h4255Usage;
+	
+	public Double h535Dosage;
+	public Double h535Usage;
+	
+	public Double h874Dosage;
+	public Double h874Usage;
+	
+	// Biocides - non-oxidisers
+	public Double c31Dosage;
+	public Double c31Usage;
+	
+	public Double c32Dosage;
+	public Double c32Usage;
+	
+	public Double c44Dosage;
+	public Double c44Usage;
+	
+	public Double c45Dosage;
+	public Double c45Usage;
+	
+	public Double c48Dosage;
+	public Double c48Usage;
+	
+	public Double c51Dosage;
+	public Double c51Usage;
+	
+	public Double c52Dosage;
+	public Double c52Usage;
+	
+	public Double c54Dosage;
+	public Double c54Usage;
+	
+	public Double c58Dosage;
+	public Double c58Usage;
+	
+	
+	// Biocides - oxidising
+	// No calculations here, just text output (for now)
+	
 
 	// FRAMEWORK METHODS
 
@@ -289,6 +361,9 @@ public class CoolingModel {
 
 		try {
 			if (_sharedInstance.inputsValid()){
+				
+				// SOLIDS
+				
 				// Evaporation
 				tmp = _sharedInstance.circulation * _sharedInstance.deltaT * 1.8 * 0.001;// 1.8 = conversion to Farenheit
 				_sharedInstance.evaporation = tmp;
@@ -415,6 +490,75 @@ public class CoolingModel {
 				_sharedInstance.c42tCostAnnum = tmp;
 				***/
 
+				// LIQUIDS
+				// Inhibitors
+				tmp = _sharedInstance.makeupAnnum / (1000.0 * _sharedInstance.concFactor); // common factor
+				_sharedInstance.h207Dosage = 100.0;
+				_sharedInstance.h207Usage = _sharedInstance.h207Dosage * tmp;
+				
+				_sharedInstance.h2073Dosage = 300.0;
+				_sharedInstance.h2073Usage = _sharedInstance.h2073Dosage * tmp;
+				
+				_sharedInstance.h280Dosage = 80.0;
+				_sharedInstance.h280Usage = _sharedInstance.h280Dosage * tmp;
+				
+				_sharedInstance.h2805Dosage = 160.0;
+				_sharedInstance.h2805Usage = _sharedInstance.h2805Dosage * tmp;
+				
+				_sharedInstance.h390Dosage = 50.0;
+				_sharedInstance.h390Usage = _sharedInstance.h390Dosage * tmp;
+				
+				_sharedInstance.h3905Dosage = 100.0;
+				_sharedInstance.h3905Usage = _sharedInstance.h3905Dosage * tmp;
+				
+				_sharedInstance.h391Dosage = 150.0;
+				_sharedInstance.h391Usage = _sharedInstance.h391Dosage * tmp;
+				
+				_sharedInstance.h423Dosage = 100.0;
+				_sharedInstance.h423Usage = _sharedInstance.h423Dosage * tmp;
+				
+				_sharedInstance.h425Dosage = 100.0;
+				_sharedInstance.h425Usage = _sharedInstance.h425Dosage * tmp;
+				
+				_sharedInstance.h4255Dosage = 200.0;
+				_sharedInstance.h4255Usage = _sharedInstance.h4255Dosage * tmp;
+				
+				_sharedInstance.h535Dosage = 100.0;
+				_sharedInstance.h535Usage = _sharedInstance.h535Dosage * tmp;
+				
+				_sharedInstance.h874Dosage = 120.0;
+				_sharedInstance.h874Usage = _sharedInstance.h874Dosage * tmp;
+				
+				// Biocides - non-oxidisers
+				tmp = _sharedInstance.sysVolume * 52.0 / 1000.0 ; // common factor
+				_sharedInstance.c31Dosage = 200.0;
+				_sharedInstance.c31Usage = _sharedInstance.c31Dosage * tmp;
+				
+				_sharedInstance.c32Dosage = 100.0;
+				_sharedInstance.c32Usage = _sharedInstance.c32Dosage * tmp;
+				
+				_sharedInstance.c44Dosage = 80.0;
+				_sharedInstance.c44Usage = _sharedInstance.c44Dosage * tmp;
+				
+				_sharedInstance.c45Dosage = 125.0;
+				_sharedInstance.c45Usage = _sharedInstance.c45Dosage * tmp;
+				
+				_sharedInstance.c48Dosage = 250.0;
+				_sharedInstance.c48Usage = _sharedInstance.c48Dosage * tmp;
+				
+				_sharedInstance.c51Dosage = 125.0;
+				_sharedInstance.c51Usage = _sharedInstance.c51Dosage * tmp;
+				
+				_sharedInstance.c52Dosage = 100.0;
+				_sharedInstance.c52Usage = _sharedInstance.c52Dosage * tmp;
+				
+				_sharedInstance.c54Dosage = 100.0;
+				_sharedInstance.c54Usage = _sharedInstance.c54Dosage * tmp;
+				
+				_sharedInstance.c58Dosage = 100.0;
+				_sharedInstance.c58Usage = _sharedInstance.c58Dosage * tmp;
+
+				
 			} else {
 				Log.i(TAG, "CoolingWaterModel: inputs not fully defined");
 			}

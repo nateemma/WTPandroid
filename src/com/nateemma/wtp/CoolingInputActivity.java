@@ -19,6 +19,8 @@ public class CoolingInputActivity extends Activity {
 	private static CoolingModel mCoolingModel = null;
 
 	private Context mContext;
+	
+	private String mEstType = ""; // estimate type (solid or liquid)
 
 	// Input Views
 	private static EditText vSite; // this is the key for the data
@@ -68,6 +70,12 @@ public class CoolingInputActivity extends Activity {
 
 			// load the initial data
 			loadData();
+			
+			// get the estimate type
+			mEstType = getIntent().getStringExtra(LocalIntents.ARG0);
+			if ((mEstType==null) || (mEstType.length()==0)){
+				mEstType = LocalIntents.SOLIDS;
+			}
 
 		} catch (Exception e){
 			Log.e(TAG, "onCreate() Error: "+e.toString());
@@ -307,12 +315,19 @@ public class CoolingInputActivity extends Activity {
 			mCoolingModel.calculateAmounts();
 			Log.v(TAG, "Launching Results Activity");
 			Intent intent = new Intent();
-			intent.setAction(LocalIntents.COOLING_RESULTS);
+			if (mEstType.equals(LocalIntents.SOLIDS)){
+				intent.setAction(LocalIntents.COOLING_SOLIDS_RESULTS);
+			} else if (mEstType.equals(LocalIntents.LIQUIDS)){
+				intent.setAction(LocalIntents.COOLING_LIQUIDS_RESULTS);
+			} else {
+				Log.e(TAG, "invalid estimate type: "+mEstType);
+				return;
+			}
 			try {
 				startActivity(intent);
 			} catch (Throwable t){
 				Log.e(TAG, "startActivity exception: " + t.toString());
-				Toast.makeText(mContext, "Error starting " + LocalIntents.COOLING_RESULTS, Toast.LENGTH_SHORT).show();
+				Toast.makeText(mContext, "Error starting Results activity: "+mEstType, Toast.LENGTH_SHORT).show();
 			}
 
 		} else {

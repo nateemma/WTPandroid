@@ -8,21 +8,26 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
 	private Context  mContext;
 
-	private Button btnBoiler;
-	private Button btnCooling;
+	// Pseudo buttons (compound LinearLayout made to look like a button)
+	private LinearLayout btnBoilerSolids;
+	private LinearLayout btnCoolingSolids;
+	private LinearLayout btnBoilerLiquids;
+	private LinearLayout btnCoolingLiquids;
+	
 	private Button btnAbout;
 	private Button btnContact;
 	private Button btnHelp;
 
 	private static final String TAG = "MainActivity";
-	private static Boolean splashDisplayed = false;
-	private static Boolean mSetupDone = false;
+	//private static Boolean splashDisplayed = false;
+	//private static Boolean mSetupDone = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,9 @@ public class MainActivity extends Activity {
 
 		try{
 
-			if (!mSetupDone) {
-				mSetupDone = true;
+			Log.v(TAG, "onCreate()");
+			//if (!mSetupDone) {
+				//mSetupDone = true;
 				setContentView(R.layout.activity_main);
 
 				mContext = this;
@@ -39,18 +45,22 @@ public class MainActivity extends Activity {
 				//getActionBar().setDisplayHomeAsUpEnabled(true);
 
 				// Set up handlers for the buttons
-				btnBoiler = (Button) findViewById(R.id.btnBoiler);
-				btnCooling = (Button) findViewById(R.id.btnCooling);
+				btnBoilerSolids = (LinearLayout) findViewById(R.id.btnBoilerSolids);
+				btnCoolingSolids = (LinearLayout) findViewById(R.id.btnCoolingSolids);
+				btnBoilerLiquids = (LinearLayout) findViewById(R.id.btnBoilerLiquids);
+				btnCoolingLiquids = (LinearLayout) findViewById(R.id.btnCoolingLiquids);
 				btnAbout = (Button) findViewById(R.id.btnAbout);
 				btnContact = (Button) findViewById(R.id.btnContact);
 				btnHelp = (Button) findViewById(R.id.btnHelp);
 
-				btnBoiler.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.BOILER_INPUT);};});
-				btnCooling.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.COOLING_INPUT);};});
-				btnAbout.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.ABOUT);};});
-				btnContact.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.CONTACT);};});
-				btnHelp.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.HELP);};});
-			}
+				btnBoilerSolids.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.BOILER_INPUT, LocalIntents.SOLIDS);};});
+				btnCoolingSolids.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.COOLING_INPUT, LocalIntents.SOLIDS);};});
+				btnBoilerLiquids.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.BOILER_INPUT, LocalIntents.LIQUIDS);};});
+				btnCoolingLiquids.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.COOLING_INPUT, LocalIntents.LIQUIDS);};});
+				btnAbout.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.ABOUT, null);};});
+				btnContact.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.CONTACT, null);};});
+				btnHelp.setOnClickListener (new OnClickListener(){public void onClick(View v) {launchActivity(LocalIntents.HELP, null);};});
+			//}
 		} catch (Exception e){
 			Log.e(TAG, "Error: "+e.toString());
 		}
@@ -60,8 +70,9 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
+		Log.v(TAG, "onDestroy()");
 		finish();
-		android.os.Process.killProcess(android.os.Process.myPid());
+		//android.os.Process.killProcess(android.os.Process.myPid());
 	} //onDestroy
 
 
@@ -69,9 +80,12 @@ public class MainActivity extends Activity {
 
 
 	// Utility to launch activity given the Intent name
-	void launchActivity(String intentName) {
+	void launchActivity(String intentName, String arg) {
 		Intent intent = new Intent();
 		intent.setAction(intentName);
+		if ((arg!=null) && (arg.length()>0)){
+			intent.putExtra(LocalIntents.ARG0, arg);
+		}
 		try {
 			startActivity(intent);
 		} catch (Throwable t){

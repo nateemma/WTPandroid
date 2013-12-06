@@ -3,15 +3,21 @@
 
     <string name="app_name">WTP Estimation Tools</string>
     <string name="action_settings">Settings</string>
+    <string name="appVersion">v1.1.0</string>
 
     <!-- ======================= -->
     <!-- Main Screen -->
     <!-- ======================= -->
     <string name="boilerWaterButtonText">Steam Boiler Product Estimates</string>
     <string name="coolingWaterButtonText">Cooling Water Product Estimates</string>
+    <string name="boilerLabel">Steam Boiler</string>
+    <string name="coolingLabel">Cooling System</string>
+    <string name="solidLabel">Solid Chemicals</string>
+    <string name="liquidLabel">Liquid Chemicals</string>
     <string name="helpLabel">Help</string>
     <string name="aboutUsLabel">About Us</string>
     <string name="contactUsLabel">Contact Us</string>
+    <string name="space"></string>
 
     <!-- ======================= -->
     <!-- Steam Boiler Data Entry -->
@@ -53,7 +59,7 @@
     <string name="CaHardnessUnit">ppm</string>
     <string name="tempPrompt">Temperature</string>
     <string name="tempHint">Temperature</string>
-    <string name="tempUnit">°C</string>
+    <string name="tempUnit">&#176;</string>
 
     <!--  -->
     <string name="boilerDetailsLabel">Boiler Details</string>
@@ -68,9 +74,9 @@
     <string name="minCausticUnit"></string>
 
     <!-- ======================= -->
-    <!-- Steam Boiler Product Estimates -->
+    <!-- Steam Boiler Solids Product Estimates -->
     <!-- ======================= -->
-    <string name="boilerResultsActivity">Steam Boiler Estimates</string>
+    <string name="boilerSolidsResultsActivity">Steam Boiler Estimates (Solids)</string>
     <string name="action_email">Email</string>
     <string name="productTitle">Product</string>
     <string name="dosageTitle">Dosage</string>
@@ -89,6 +95,35 @@
     <string name="ss2295Description">Phosphate/Polymer</string>
     <string name="ss8985Title">WTP SS8985</string>
     <string name="ss8985Description">Amines</string>
+
+    <!-- ======================= -->
+    <!-- Steam Boiler Liquids Product Estimates -->
+    <!-- ======================= -->
+    <string name="boilerLiquidsResultsActivity">Steam Boiler Estimates (Liquids)</string>
+    <string name="s5Title">WTP S5</string>
+    <string name="s5Description">17% as Sodium bisulphite/catalysed</string>
+    <string name="s10Title">WTP S10</string>
+    <string name="s10Description">35% as Sodium bisulphite/catalysed</string>
+    <string name="s123Title">WTP S123</string>
+    <string name="s123Description">All in One Low Sulphite</string>
+    <string name="s125Title">WTP S125</string>
+    <string name="s125Description">All in One High Sulphite</string>
+    <string name="s26Title">WTP S26</string>
+    <string name="s26Description">25% tannin/caustic</string>
+    <string name="s28Title">WTP S28</string>
+    <string name="s28Description">25% tannin</string>
+    <string name="s19Title">WTP S19</string>
+    <string name="s19Description">Alkalinity Builder</string>
+    <string name="s456Title">WTP S456</string>
+    <string name="s456Description">Polymer blend</string>
+    <string name="s124Title">WTP S124</string>
+    <string name="s124Description">All in one Tannin Product</string>
+    <string name="s22Title">WTP S22</string>
+    <string name="s22Description">Phosphate/Polymer</string>
+    <string name="s23Title">WTP S23</string>
+    <string name="s23Description">Phosphate/Polymer/Caustic</string>
+    <string name="s88Title">WTP S88</string>
+    <string name="s88Description">Morpholine/Cyclohex</string>
     <!--  -->
 
 
@@ -105,7 +140,7 @@
     <string name="circulationUnit">m3/hr</string>
     <string name="deltaTPrompt">∆T</string>
     <string name="deltaTHint">∆T</string>
-    <string name="deltaTUnit">°C</string>
+    <string name="deltaTUnit">&#176;</string>
     <string name="sumpVolumePrompt">Sump Volume</string>
     <string name="sumpVolumeHint">Sump Volume</string>
     <string name="sumpVolumeUnit">m3</string>
@@ -131,9 +166,9 @@
     <string name="weeksHint">weeks/year</string>
 
     <!-- ======================= -->
-    <!-- Cooling Water  Product Estimates -->
+    <!-- Cooling Water Solids Product Estimates -->
     <!-- ======================= -->
-    <string name="coolingResultsActivity">Cooling Water Estimates</string>
+    <string name="coolingSolidsResultsActivity">Cooling Water Estimates (Solids)</string>
     <string name="costKgTitle">Cost/kg</string>
     <string name="costKgUnits">(£/kg)</string>
     <string name="costAnnumTitle">Cost/Yr</string>
@@ -160,6 +195,79 @@
     <string name="cschlorDescription">Cal Hypo Tablet</string>
     <string name="c42tTitle">WTP C42T</string>
     <string name="c42tDescription">Bromine tablets (brominator)</string>
+
+    <!-- ======================= -->
+    <!-- Cooling Liquids Product Estimates -->
+    <!-- ======================= -->
+    <!-- some re-use from solids section -->
+    <string name="coolingLiquidsResultsActivity">Cooling Estimates (Liquids)</string>
+    <string name="nOxBiocides01">Biocides</string>
+    <string name="nOxBiocides02">Non-Oxidising</string>
+    <string name="doseRate">Dose Rate</string>
+    <string name="doseRateUnits">mg/L in system</string>
+    <string name="doseRateAnnum01">Litres/Annum</string>
+    <string name="doseRateAnnum02">Estimated</string>
+    <string name="minDoseTitle">Minimum Dose</string>
+    <string name="minDoseUnits">ppm</string>
+    <string name="oxBiocides01">Biocides</string>
+    <string name="oxBiocides02">Oxidising</string>
+    <string name="oxHdr01">Minimum free</string>
+    <string name="oxHdr02">Halogen</string>
+    <string name="halogenDose">1&#8211;3 ppm</string>
+    <string name="oxDescription">As required by L8</string>
+    
+    <string name="h207Title">WTP H207</string>
+    <string name="h207Description">Scale inhibitor</string>
+    <string name="h2073Title">WTP H2073</string>
+    <string name="h2073Description">Scale inhibitor</string>
+    <string name="h280Title">WTP H280</string>
+    <string name="h280Description">Scale/corrosion inhibitor</string>
+    <string name="h2805Title">WTP H2805</string>
+    <string name="h2805Description">Scale/corrosion inhibitor</string>
+    <string name="h390Title">WTP H390</string>
+    <string name="h390Description">Corrosion inhibitor</string>
+    <string name="h3905Title">WTP H3095</string>
+    <string name="h3905Description">Corrosion inhibitor</string>
+    <string name="h391Title">WTP H391</string>
+    <string name="h391Description">Corrosion inhibitor</string>
+    <string name="h423Title">WTP H423</string>
+    <string name="h423Description">Scale/corrosion inhibitor</string>
+    <string name="h425Title">WTP H425</string>
+    <string name="h425Description">Corrosion inhibitor</string>
+    <string name="h4255Title">WTP H4255</string>
+    <string name="h4255Description">Corrosion inhibitor</string>
+    <string name="h535Title">WTP H535</string>
+    <string name="h535Description">Scale/corrosion inhibitor</string>
+    <string name="h874Title">WTP H874</string>
+    <string name="h874Description">Scale inhibitor</string>
+    
+    <string name="c31Title">WTP C31 IsoT</string>
+    <string name="c31Description"></string>
+    <string name="c32Title">WTP C32 IsoT</string>
+    <string name="c32Description"></string>
+    <string name="c44Title">WTP C44 DBNPA</string>
+    <string name="c44Description"></string>
+    <string name="c45Title">WTP C45 Glut</string>
+    <string name="c45Description"></string>
+    <string name="c48Title">WTP C48 BNPD</string>
+    <string name="c48Description"></string>
+    <string name="c51Title">WTP C51 THPS</string>
+    <string name="c51Description"></string>
+    <string name="c52Title">WTP C52 Quat</string>
+    <string name="c52Description"></string>
+    <string name="c54Title">WTP C54 Poly Quat</string>
+    <string name="c54Description"></string>
+    <string name="c58Title">WTP C58 DDMQ</string>
+    <string name="c58Description"></string>
+    
+    <string name="c42tbTitle">WTP C42T BCDMH</string>
+    <string name="c42tbDescription"></string>
+    <string name="ub30Title">WTP UB30 Bromine</string>
+    <string name="ub30Description"></string>
+    <string name="chlor10Title">WTP Chlor 10 NaOCl</string>
+    <string name="chlor10Description"></string>
+    <string name="b20Title">WTP B20 Bromide</string>
+    <string name="b20Description"></string>
 
     <!-- ======================= -->
     <!-- About Us -->

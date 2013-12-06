@@ -10,6 +10,7 @@
     <color name="WTP_orange">#F19A39</color>
     <color name="WTP_mid_orange">#F2BD82</color>
     <color name="WTP_light_orange">#FFC789</color>
+    <color name="WTP_solid_orange">#FFF39D41</color>
     <color name="WTP_translucent_orange">#AFF19A39</color>
     
     <color name="WTP_green">#018D37</color>

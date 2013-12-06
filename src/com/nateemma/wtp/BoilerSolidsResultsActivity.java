@@ -15,10 +15,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 // Class to implement display of Steam Boiler results
-public class BoilerResultsActivity extends Activity {
+public class BoilerSolidsResultsActivity extends Activity {
 
 
-	private static final String TAG = "BoilerResultsActivity";
+	private static final String TAG = "BoilerSolidsResultsActivity";
 
 	private static BoilerModel mBoilerModel = null;
 
@@ -51,7 +51,7 @@ public class BoilerResultsActivity extends Activity {
 			mContext = this;
 		    getActionBar().setDisplayHomeAsUpEnabled(true);
 
-			setContentView(R.layout.boiler_results);
+			setContentView(R.layout.boiler_solids_results);
 
 			// connect the views with the output fields
 
@@ -294,7 +294,7 @@ public class BoilerResultsActivity extends Activity {
 	private Uri createAttachment(String contents) {
 		Uri attachUri=null;
 
-		String ATTACH_FILE = "boiler";
+		String ATTACH_FILE = "boilersolids";
 		FileCache.init();
 		String attachPath = FileCache.getFilePath(ATTACH_FILE);
 		FileCache.writeTextFile(attachPath, contents);

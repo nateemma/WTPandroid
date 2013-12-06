@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nateemma.wtp"
-    android:versionCode="1"
-    android:versionName="1.0.1" >
+    android:versionCode="2"
+    android:versionName="1.0.2" >
 
     <!-- Permissions for reading/saving files, making calls -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -85,9 +85,10 @@
         </activity>
 
         <!-- Steam Boiler Results -->
+        <!-- Solids -->
         <activity
-            android:name="com.nateemma.wtp.BoilerResultsActivity"
-            android:label="@string/boilerResultsActivity"
+            android:name="com.nateemma.wtp.BoilerSolidsResultsActivity"
+            android:label="@string/boilerSolidsResultsActivity"
             android:parentActivityName="com.nateemma.wtp.BoilerInputActivity"
             android:screenOrientation="landscape" >
 
@@ -97,7 +98,26 @@
                 android:value="com.nateemma.wtp.BoilerInputActivity" />
 
             <intent-filter>
-                <action android:name="com.nateemma.wtp.BOILER_RESULTS" />
+                <action android:name="com.nateemma.wtp.BOILER_SOLIDS_RESULTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Liquids -->
+        <activity
+            android:name="com.nateemma.wtp.BoilerLiquidsResultsActivity"
+            android:label="@string/boilerLiquidsResultsActivity"
+            android:parentActivityName="com.nateemma.wtp.BoilerInputActivity"
+            android:screenOrientation="landscape" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nateemma.wtp.BoilerInputActivity" />
+
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.BOILER_LIQUIDS_RESULTS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -124,9 +144,10 @@
         </activity>
 
         <!-- Cooling Water Results -->
+        <!-- Solids -->
         <activity
-            android:name="com.nateemma.wtp.CoolingResultsActivity"
-            android:label="@string/coolingResultsActivity"
+            android:name="com.nateemma.wtp.CoolingSolidsResultsActivity"
+            android:label="@string/coolingSolidsResultsActivity"
             android:parentActivityName="com.nateemma.wtp.CoolingInputActivity"
             android:screenOrientation="landscape" >
 
@@ -136,12 +157,32 @@
                 android:value="com.nateemma.wtp.CoolingInputActivity" />
 
             <intent-filter>
-                <action android:name="com.nateemma.wtp.COOLING_RESULTS" />
+                <action android:name="com.nateemma.wtp.COOLING_SOLIDS_RESULTS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
+        <!-- Liquids -->
+        <activity
+            android:name="com.nateemma.wtp.CoolingLiquidsResultsActivity"
+            android:label="@string/coolingLiquidsResultsActivity"
+            android:parentActivityName="com.nateemma.wtp.CoolingInputActivity"
+            android:screenOrientation="landscape" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nateemma.wtp.CoolingInputActivity" />
+
+            <intent-filter>
+                <action android:name="com.nateemma.wtp.COOLING_LIQUIDS_RESULTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+  
+        
         <!-- About Us Activity -->
         <activity
             android:name="com.nateemma.wtp.AboutActivity"

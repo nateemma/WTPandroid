@@ -60,10 +60,11 @@ public class BoilerModel {
 	public Double minSulphite;
 	public Double minCausticAlk;
 
+	public Double minAlkalinity;
 	public Double annualFeed;
 	public Double dissolvedO2;
 
-	// Calculated values
+	// Calculated values - Solids
 	public Double ss1295Dosage;
 	public Double ss1295Usage;
 
@@ -82,7 +83,42 @@ public class BoilerModel {
 	public Double ss8985Dosage;
 	public Double ss8985Usage;
 
+	// Calculated values - Liquids
+	public Double s5Dosage;
+	public Double s5Usage;
 
+	public Double s10Dosage;
+	public Double s10Usage;
+
+	public Double s123Dosage;
+	public Double s123Usage;
+
+	public Double s125Dosage;
+	public Double s125Usage;
+
+	public Double s26Dosage;
+	public Double s26Usage;
+
+	public Double s28Dosage;
+	public Double s28Usage;
+
+	public Double s19Dosage;
+	public Double s19Usage;
+
+	public Double s456Dosage;
+	public Double s456Usage;
+
+	public Double s124Dosage;
+	public Double s124Usage;
+
+	public Double s22Dosage;
+	public Double s22Usage;
+
+	public Double s23Dosage;
+	public Double s23Usage;
+
+	public Double s88Dosage;
+	public Double s88Usage;
 
 
 	// FRAMEWORK METHODS
@@ -110,11 +146,6 @@ public class BoilerModel {
 	// need context to use system functions, so provide setter function
 	public void setContext (Context context){
 		mContext = context;
-		/***
-		if ((_sharedInstance.inSite==null) || (_sharedInstance.inSite.length()==0)) { // first time?
-			_sharedInstance.restore(); // can't do this until Context has been set
-		}
-		***/
 	}
 
 
@@ -278,6 +309,8 @@ public class BoilerModel {
 
 			// Product Amounts
 
+			// SOLIDS
+
 			// SS1295
 			tmp = (_sharedInstance.dissolvedO2 * 10.0) + (35.0 / (_sharedInstance.maxTDS / _sharedInstance.TDS));
 			_sharedInstance.ss1295Dosage = tmp;
@@ -326,10 +359,79 @@ public class BoilerModel {
 
 			tmp = _sharedInstance.ss8985Dosage * _sharedInstance.annualFeed / 1000.0 ;
 			_sharedInstance.ss8985Usage = tmp;
+
+			
+			// LIQUIDS
+
+			_sharedInstance.minAlkalinity = 15.0 / 100.0 * _sharedInstance.maxTDS;
+			Log.v(TAG, "minAlk: "+round1(_sharedInstance.minAlkalinity));
+			
+			tmp = _sharedInstance.maxTDS/_sharedInstance.TDS; // common term
+
+			// S5
+			_sharedInstance.s5Dosage = _sharedInstance.dissolvedO2*35.0 +(120.0 / tmp);
+			_sharedInstance.s5Usage = _sharedInstance.s5Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S10
+			_sharedInstance.s10Dosage = _sharedInstance.dissolvedO2*18.0 +(65.0 / tmp);
+			_sharedInstance.s10Usage = _sharedInstance.s10Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S123
+			_sharedInstance.s123Dosage = _sharedInstance.dissolvedO2*65.0 +(150.0 / tmp);
+			_sharedInstance.s123Usage = _sharedInstance.s123Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S125
+			_sharedInstance.s125Dosage = _sharedInstance.dissolvedO2*40.0 +(240.0 / tmp);
+			_sharedInstance.s125Usage = _sharedInstance.s125Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S26
+			_sharedInstance.s26Dosage = (600.0 / tmp);
+			_sharedInstance.s26Usage = _sharedInstance.s26Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S28
+			_sharedInstance.s28Dosage = (600.0 / tmp);
+			_sharedInstance.s28Usage = _sharedInstance.s28Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S19
+			_sharedInstance.s19Dosage =  _sharedInstance.CaHardness - _sharedInstance.MAlk + ((1000.0-_sharedInstance.minAlkalinity) / tmp);
+			if (_sharedInstance.s19Dosage < 0.0){
+				_sharedInstance.s19Usage = 0.0 ;
+				_sharedInstance.s19Dosage = 0.0 ;
+			} else {
+				_sharedInstance.s19Usage = _sharedInstance.s19Dosage * _sharedInstance.annualFeed / 1000.0 ;
+			}
+
+			// S456
+			_sharedInstance.s456Dosage = 150.0 * (_sharedInstance.CaHardness+0.25) / tmp ;
+			_sharedInstance.s456Usage = _sharedInstance.s456Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S124
+			_sharedInstance.s124Dosage = (1200.0 / tmp);
+			_sharedInstance.s124Usage = _sharedInstance.s124Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S22
+			_sharedInstance.s22Dosage = (200.0 / tmp) + (4.0 * _sharedInstance.CaHardness);
+			_sharedInstance.s22Usage = _sharedInstance.s22Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S23
+			_sharedInstance.s23Dosage = (1000.0 / tmp) + (20.0 * _sharedInstance.CaHardness);
+			_sharedInstance.s23Usage = _sharedInstance.s23Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S88
+			_sharedInstance.s88Dosage = 3.0 * _sharedInstance.MAlk;
+			_sharedInstance.s88Usage = _sharedInstance.s88Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
 		} catch (Exception e) {
 			Log.e(TAG, "calculateAmounts() - exception: " + e.toString());
 		}
 
+	}
+	
+	// round to 1 decimal place
+	private String round1(Double value) {
+		Double tmp = 0.0;
+		tmp = ((int)((value+0.05) * 10)) / 10.0;	    
+		return tmp.toString();
 	}
 
 }
