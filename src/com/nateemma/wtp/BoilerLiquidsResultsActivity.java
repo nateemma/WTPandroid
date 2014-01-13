@@ -48,6 +48,8 @@ public class BoilerLiquidsResultsActivity extends Activity {
 	private static TextView vOutS23Usage;
 	private static TextView vOutS88Dosage;
 	private static TextView vOutS88Usage;
+	private static TextView vOutS95Dosage;
+	private static TextView vOutS95Usage;
 
 
 
@@ -86,6 +88,8 @@ public class BoilerLiquidsResultsActivity extends Activity {
 			vOutS23Usage = (TextView)findViewById(R.id.outS23Usage);
 			vOutS88Dosage = (TextView)findViewById(R.id.outS88Dosage);
 			vOutS88Usage = (TextView)findViewById(R.id.outS88Usage);
+			vOutS95Dosage = (TextView)findViewById(R.id.outS95Dosage);
+			vOutS95Usage = (TextView)findViewById(R.id.outS95Usage);
 
 
 			// load the  data
@@ -159,6 +163,8 @@ public class BoilerLiquidsResultsActivity extends Activity {
 			vOutS23Usage.setText(Utilities.round1(mBoilerModel.s23Usage));
 			vOutS88Dosage.setText(Utilities.round1(mBoilerModel.s88Dosage));
 			vOutS88Usage.setText(Utilities.round1(mBoilerModel.s88Usage));
+			vOutS95Dosage.setText(Utilities.round1(mBoilerModel.s95Dosage));
+			vOutS95Usage.setText(Utilities.round1(mBoilerModel.s95Usage));
 
 		} catch (Exception e){
 			Log.e(TAG, "loadData() Error: "+e.toString());
@@ -296,6 +302,7 @@ public class BoilerLiquidsResultsActivity extends Activity {
 		htmlString += rowText(R.string.s22Title,  mBoilerModel.s22Dosage,  mBoilerModel.s22Usage,  R.string.s22Description) ;
 		htmlString += rowText(R.string.s23Title,  mBoilerModel.s23Dosage,  mBoilerModel.s23Usage,  R.string.s23Description) ;
 		htmlString += rowText(R.string.s88Title,  mBoilerModel.s88Dosage,  mBoilerModel.s88Usage,  R.string.s88Description) ;
+		htmlString += rowText(R.string.s95Title,  mBoilerModel.s95Dosage,  mBoilerModel.s95Usage,  R.string.s95Description) ;
 
 		htmlString += "</TR>" ;
 		htmlString += "</TABLE>" ;

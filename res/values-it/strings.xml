@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WTP Stima Tools</string>
+    <string name="action_settings">Impostazioni</string>
+
+    <!-- ======================= -->
+    <!-- Main Screen -->
+    <!-- ======================= -->
+    <string name="boilerWaterButtonText">Le stime Steam Boiler prodotto</string>
+    <string name="coolingWaterButtonText">Le stime di raffreddamento dell\'acqua di prodotto</string>
+    <string name="boilerLabel">Steam Boiler</string>
+    <string name="coolingLabel">Sistema di raffreddamento</string>
+    <string name="solidLabel">Prodotti chimici solidi</string>
+    <string name="liquidLabel">Prodotti chimici liquidi</string>
+    <string name="helpLabel">Aiuto</string>
+    <string name="aboutUsLabel">Chi siamo</string>
+    <string name="contactUsLabel">Contattaci</string>
+    <string name="space"></string>
+
+    <!-- ======================= -->
+    <!-- Steam Boiler Data Entry -->
+    <!-- ======================= -->
+    <string name="action_estimate">Stima</string>
+    <string name="boilerInputActivity">Parametri Steam Boiler</string>
+    <string name="siteNameLabel">Nome sito</string>
+    <string name="sitePrompt">Nome:</string>
+    <string name="siteHint">Inserire il nome del sito</string>
+    <!--  -->
+    <string name="boilerDutyLabel">Caldaia Duty</string>
+    <string name="summerTitle">Estate</string>
+    <string name="winterTitle">Inverno</string>
+    <string name="steamPrompt">Steam (lb / or)</string>
+    <string name="steamSumHint">Estate vapore</string>
+    <string name="steamWinHint">Vapore Inverno</string>
+    <string name="hoursPrompt">Ore / Giorno</string>
+    <string name="hoursSumHint">Orario estivo</string>
+    <string name="hoursWinHint">Orario invernale</string>
+    <string name="daysPrompt">Giorni / Settimana</string>
+    <string name="daysSumHint">Giornate estive</string>
+    <string name="daysWinHint">Giornate invernali</string>
+    <string name="weeksPrompt">Settimane / anno</string>
+    <string name="weeksSumHint">Settimane estive</string>
+    <string name="weeksWinHint">Settimane bianche</string>
+    <!--  -->
+    <string name="feedWaterLabel">Alimentazione acqua</string>
+    <string name="TDSPrompt">TDS</string>
+    <string name="TDSHint">TDS</string>
+    <string name="TDSUnit">ppm</string>
+    <string name="MAlkPrompt">M Alk</string>
+    <string name="MAlkHint">M Alk</string>
+    <string name="MAlkUnit">ppm</string>
+    <string name="pHPrompt">pH</string>
+    <string name="pHHint">pH</string>
+    <string name="pHUnit"></string>
+    <string name="CaHardnessPrompt">Ca Durezza</string>
+    <string name="CaHardnessHint">Ca Durezza</string>
+    <string name="CaHardnessUnit">ppm</string>
+    <string name="tempPrompt">Temperatura</string>
+    <string name="tempHint">Temperatura</string>
+    <string name="tempUnit">&#176;C</string>
+
+    <!--  -->
+    <string name="boilerDetailsLabel">Caldaia Dettagli</string>
+    <string name="maxTDSPrompt">Max TDS</string>
+    <string name="maxTDSHint">Max TDS</string>
+    <string name="maxTDSUnit">ppm</string>
+    <string name="minSulphitePrompt">Riserva min Sulphite</string>
+    <string name="minSulphiteHint">Riserva min Sulphite</string>
+    <string name="minSulphiteUnit">ppm</string>
+    <string name="minCausticPrompt">Min Caustic alcalinità</string>
+    <string name="minCausticHint">Min Caustic alcalinità</string>
+    <string name="minCausticUnit"></string>
+
+    <!-- ======================= -->
+    <!-- Steam Boiler Solids Product Estimates -->
+    <!-- ======================= -->
+    <string name="boilerSolidsResultsActivity">Le stime Steam Boiler (solidi)</string>
+    <string name="action_email">Email</string>
+    <string name="productTitle">Prodotto</string>
+    <string name="dosageTitle">Dosaggio</string>
+    <string name="dosageUnits">(G/m3)</string>
+    <string name="usageTitle">Uso</string>
+    <string name="usageUnits">(Kg / anno)</string>
+    <string name="ss1295Title">WTP SS1295</string>
+    <string name="ss1295Description">All in One - solfito</string>
+    <string name="ss1350Title">WTP SS1350</string>
+    <string name="ss1350Description">All in One - solfito, non caustica</string>
+    <string name="ss1095Title">WTP SS1095</string>
+    <string name="ss1095Description">Solfito di sodio</string>
+    <string name="ss1995Title">WTP SS1995</string>
+    <string name="ss1995Description">Alcalinità Builder</string>
+    <string name="ss2295Title">WTP SS2295</string>
+    <string name="ss2295Description">Fosfato / Polymer</string>
+    <string name="ss8985Title">WTP SS8985</string>
+    <string name="ss8985Description">Ammine</string>
+
+    <!-- ======================= -->
+    <!-- Steam Boiler Liquids Product Estimates -->
+    <!-- ======================= -->
+    <string name="boilerLiquidsResultsActivity">Le stime Steam Boiler (liquidi)</string>
+    <string name="s5Title">WTP S5</string>
+    <string name="s5Description">17% di bisolfito di sodio / catalizzato</string>
+    <string name="s10Title">WTP S10</string>
+    <string name="s10Description">35% di bisolfito di sodio / catalizzato</string>
+    <string name="s123Title">WTP S123</string>
+    <string name="s123Description">All in One Low Sulphite</string>
+    <string name="s125Title">WTP S125</string>
+    <string name="s125Description">All in One Alta Sulphite</string>
+    <string name="s26Title">WTP S26</string>
+    <string name="s26Description">25% di tannino / caustica</string>
+    <string name="s28Title">WTP S28</string>
+    <string name="s28Description">25% di tannino</string>
+    <string name="s19Title">WTP S19</string>
+    <string name="s19Description">Alcalinità Builder</string>
+    <string name="s456Title">WTP S456</string>
+    <string name="s456Description">Una miscela di polimeri</string>
+    <string name="s124Title">WTP S124</string>
+    <string name="s124Description">Tutto in un tannino prodotto</string>
+    <string name="s22Title">WTP S22</string>
+    <string name="s22Description">Fosfato / Polymer</string>
+    <string name="s23Title">WTP S23</string>
+    <string name="s23Description">Fosfato / Polimero / Caustic</string>
+    <string name="s88Title">WTP S88</string>
+    <string name="s88Description">Morfolina / Cicloes</string>
+    <!--  -->
+
+
+    <!-- ======================= -->
+    <!-- Cooling Water Data Entry (some re-use from above) -->
+    <!-- ======================= -->
+
+    <string name="coolingInputActivity">Raffreddamento parametri dell\'acqua</string>
+
+    <!--  -->
+    <string name="criteriaLabel">Criteri</string>
+    <string name="circulationPrompt">Circolazione</string>
+    <string name="circulationHint">Circolazione</string>
+    <string name="circulationUnit">m3/or</string>
+    <string name="deltaTPrompt">∆T</string>
+    <string name="deltaTHint">∆T</string>
+    <string name="deltaTUnit">&#176;C</string>
+    <string name="sumpVolumePrompt">Coppa Volume</string>
+    <string name="sumpVolumeHint">Coppa Volume</string>
+    <string name="sumpVolumeUnit">m3</string>
+    <string name="sysVolumePrompt">Volume Sys</string>
+    <string name="sysVolumeHint">Volume Sys</string>
+    <string name="sysVolumeUnit">m3</string>
+    <string name="concFactorPrompt">Conc Factor</string>
+    <string name="concFactorHint">Conc Factor</string>
+    <string name="concFactorUnit"></string>
+
+    <!--  -->
+    <string name="makeupLabel">Trucco Qualità dell\'acqua</string>
+    <string name="totalHardnessPrompt">Durezza totale</string>
+    <string name="totalHardnessHint">Durezza totale</string>
+    <string name="totalHardnessUnit"></string>
+    <string name="chloridesPrompt">Cloruri</string>
+    <string name="chloridesHint">Cloruri</string>
+    <string name="chloridesUnit"></string>
+    <!--  -->
+    <string name="coolingDutyLabel">Duty / Operazione</string>
+    <string name="hoursHint">ore / giorno</string>
+    <string name="daysHint">giorni / settimana</string>
+    <string name="weeksHint">settimane / anno</string>
+
+    <!-- ======================= -->
+    <!-- Cooling Water Solids Product Estimates -->
+    <!-- ======================= -->
+    <string name="coolingSolidsResultsActivity">Le stime di raffreddamento di acqua (solidi)</string>
+    <string name="costKgTitle">Cost / kg</string>
+    <string name="costKgUnits">(£ / kg)</string>
+    <string name="costAnnumTitle">Costo / Yr</string>
+    <string name="costAnnumUnits">(£ / anno)</string>
+    <!--  -->
+    <string name="inhibitorTitle">Inibitori</string>
+    <string name="hs2097Title">WTP HS2097</string>
+    <string name="hs2097Description">Tutti inibitore della scala biologica</string>
+    <string name="hs4390Title">WTP HS4390</string>
+    <string name="hs4390Description">Scala Molybdate phosphorate / inibitore di corrosione </string>
+    <string name="hs3990Title">WTP HS3990</string>
+    <string name="hs3990Description">Inibitore di corrosione Silicato / Phosphonate</string>
+    <!--  -->
+    <string name="biocidesTitle">Biocidi</string>
+    <string name="cs4400Title">WTP CS4400</string>
+    <string name="cs4400Description">Biocida + disperdente</string>
+    <string name="cs4802Title">WTP CS4802</string>
+    <string name="cs4802Description">Bronopol</string>
+    <string name="cs4490Title">WTP CS4490</string>
+    <string name="cs4490Description">DBNPA</string>
+    <string name="scg1Title">WTP SCG1</string>
+    <string name="scg1Description">SDIC</string>
+    <string name="cschlorTitle">WTP CS Chlor</string>
+    <string name="cschlorDescription">Cal Hypo Tablet</string>
+    <string name="c42tTitle">WTP C42T</string>
+    <string name="c42tDescription">Le compresse di bromo (brominatore)</string>
+
+    <!-- ======================= -->
+    <!-- Cooling Liquids Product Estimates -->
+    <!-- ======================= -->
+    <!-- some re-use from solids section -->
+    <string name="coolingLiquidsResultsActivity">Le stime di raffreddamento (liquidi)</string>
+    <string name="nOxBiocides01">Biocidi</string>
+    <string name="nOxBiocides02">Non comburente</string>
+    <string name="doseRate">Dose Tasso</string>
+    <string name="doseRateUnits">mg / L nel sistema</string>
+    <string name="doseRateAnnum01">Litri / anno</string>
+    <string name="doseRateAnnum02">Stima</string>
+    <string name="minDoseTitle">Minima Dose</string>
+    <string name="minDoseUnits">ppm</string>
+    <string name="oxBiocides01">Biocidi</string>
+    <string name="oxBiocides02">Comburente</string>
+    <string name="oxHdr01">Minimo libero</string>
+    <string name="oxHdr02">Halogen</string>
+    <string name="halogenDose">1&#8211;3 ppm</string>
+    <string name="oxDescription">Come richiesto dalla L8</string>
+    
+    <string name="h207Title">WTP H207</string>
+    <string name="h207Description">Inibitore della scala</string>
+    <string name="h2073Title">WTP H2073</string>
+    <string name="h2073Description">Inibitore della scala</string>
+    <string name="h280Title">WTP H280</string>
+    <string name="h280Description">Scala / inibitore di corrosione</string>
+    <string name="h2805Title">WTP H2805</string>
+    <string name="h2805Description">Scala / inibitore di corrosione</string>
+    <string name="h390Title">WTP H390</string>
+    <string name="h390Description">Inibitore di corrosione</string>
+    <string name="h3905Title">WTP H3095</string>
+    <string name="h3905Description">Inibitore di corrosione</string>
+    <string name="h391Title">WTP H391</string>
+    <string name="h391Description">Inibitore di corrosione</string>
+    <string name="h423Title">WTP H423</string>
+    <string name="h423Description">Scala / inibitore di corrosione</string>
+    <string name="h425Title">WTP H425</string>
+    <string name="h425Description">Inibitore di corrosione</string>
+    <string name="h4255Title">WTP H4255</string>
+    <string name="h4255Description">Inibitore di corrosione</string>
+    <string name="h535Title">WTP H535</string>
+    <string name="h535Description">Scala / inibitore di corrosione</string>
+    <string name="h874Title">WTP H874</string>
+    <string name="h874Description">Inibitore della scala</string>
+    
+    <string name="c31Title">WTP C31 IsoT</string>
+    <string name="c31Description"></string>
+    <string name="c32Title">WTP C32 IsoT</string>
+    <string name="c32Description"></string>
+    <string name="c44Title">WTP C44 DBNPA</string>
+    <string name="c44Description"></string>
+    <string name="c45Title">WTP C45 Glut</string>
+    <string name="c45Description"></string>
+    <string name="c48Title">WTP C48 BNPD</string>
+    <string name="c48Description"></string>
+    <string name="c51Title">WTP C51 THPS</string>
+    <string name="c51Description"></string>
+    <string name="c52Title">WTP C52 Quat</string>
+    <string name="c52Description"></string>
+    <string name="c54Title">WTP C54 Poly Quat</string>
+    <string name="c54Description"></string>
+    <string name="c58Title">WTP C58 DDMQ</string>
+    <string name="c58Description"></string>
+    
+    <string name="c42tbTitle">WTP C42T BCDMH</string>
+    <string name="c42tbDescription"></string>
+    <string name="ub30Title">WTP UB30 Bromo</string>
+    <string name="ub30Description"></string>
+    <string name="chlor10Title">WTP Chlor 10 NaOCl</string>
+    <string name="chlor10Description"></string>
+    <string name="b20Title">WTP B20 Bromuro</string>
+    <string name="b20Description"></string>
+
+    <!-- ======================= -->
+    <!-- About Us -->
+    <!-- ======================= -->
+    <string name="aboutActivity">Chi siamo</string>
+    <string name="aboutText">\n\n
+Water Treatment Products Ltd, fondata nel 1999, formulazione e produzione di specialità chimiche per una vasta gamma di aziende di trattamento delle acque e applicazioni. Se avete bisogno di prodotti chimici per l\'acqua della caldaia, acqua di raffreddamento, osmosi inversa, clorazione o disinfezione siamo esperti in produzione di soluzioni chiare per le vostre esigenze di trattamento delle acque. \n \n Per mantenere gli standard di qualità, abbiamo il controllo totale di tutte le formulazioni chimiche - l\'acquisto di materie prime di qualità, la scelta degli imballaggi e dei metodi di erogazione efficienti - assicurare che godete i prodotti migliori per soddisfare le vostre esigenze individuali. I prodotti sono fabbricati nel nostro, completamente ristrette, moderna struttura in Galles del Sud - una posizione ideale per una facile distribuzione nel Regno Unito e nei mercati d\'oltremare. \n \n Qualunque sia la formulazione, siamo in grado di soddisfare le vostre esigenze. Abbiamo oltre 200 formulazioni collaudate disponibili, quindi qualunque siano le vostre esigenze, avremo una soluzione. Trattamento delle acque Prodotti offerta: \n \n • formulazioni uniche \n • Gamma completa di prodotti chimici, polveri e liquidi \n • Kit Water Test - Drop Test Set e Dip Slides: Single, ingegneri e chimici kit specifici \n • Prodotti chimici solidi \n • proprie sostanze chimiche etichette \n • Scelta di confezioni \n • I prodotti fabbricati nel nostro stabilimento \n • ISO 9001 di qualità garantita \n • ISO 14001 standard ambientali \n • Investors in People \n • Completamente compatibile con tutte le normative \n • CLP (GHS) SDS \n • CHIPS III e n ADR \ • Esperienza nel mercato di esportazione \n • On-site DGSA e Chimici \n </string>
+
+    <!-- ======================= -->
+    <!-- Help -->
+    <!-- ======================= -->
+
+    <string name="helpActivity">Aiuto</string>
+    <string name="helpIntroTitle">Introduzione</string>
+    <string name="helpIntro">
+Questa applicazione fornisce una serie di calcolatrici per stimare la quantità di prodotti necessari per affrontare il trattamento della caldaia e di raffreddamento Water Systems. \n L\'applicazione e calcolatori sono forniti in buona fede a titolo indicativo, i parametri del sito possono cambiare e dettagli acquisite in fase di indagine potrebbero non essere sempre preciso. WTP Ltd e gli sviluppatori offrono la app in buona fede e senza garanzia, il suo scopo è fornita di un possibile utilizzo di sostanze chimiche solo. \n \n </string>
+
+    <string name="helpGeneralTitle">Generale</string>
+
+    <string name="helpBoilerTitle">Le stime Steam Boiler prodotto</string>
+    <string name="helpBoiler">
+Questo è un insieme di schermate in cui è possibile inserire i parametri per il sistema e quindi stimare la quantità di prodotti WTP associati che si avrebbe bisogno, sulla base dei dati inseriti. \n \n Nella prima schermata, immettere i dati rilevanti per il sistema, quindi toccare l\'icona "calcolare" sulla barra in alto (a destra). Questo sarà quindi visualizzato un riepilogo delle stime del prodotto. \n \n noti che c\'è un sacco di campi di input, quindi il modo più semplice per inserire i dati è quello di utilizzare il pulsante "Avanti" sopra la tastiera - questa si sposterà al campo successivo senza dover chiudere la tastiera e manualmente scorrere fino al campo successivo. Se valido, i dati vengono salvati e ripristinati quando si esegue nuovamente l\'applicazione (risparmiare un sacco di battitura). \n \n Se state andando alla difficoltà di inserimento dei dati, probabilmente avete bisogno di fare qualcosa con lui! Per aiutare in questo senso, l\'icona "Email" riassumerà </string>
+
+    <string name="helpCoolingTitle">Raffreddamento stime Water prodotto</string>
+    <string name="helpCooling">
+Si tratta di una serie di schermate che è essenzialmente lo stesso come gli schermi bollitore d\'acqua, ma per il raffreddamento Water Systems \n \n 
+</string>
+
+    <string name="helpAboutTitle">Chi siamo</string>
+    <string name="helpAbout">Questa schermata fornisce un\'introduzione Water Treatment Products, Inc.</string>
+
+    <string name="helpContactTitle">Contattaci</string>
+    <string name="helpContact">
+Questa schermata fornisce una varietà di informazioni di contatto, tra cui: \n \n - Sito web \n - Telefono e fax numeri \n - vari indirizzi e-mail \n - ufficio indirizzo \n \n Se supportato dal dispositivo, è possibile toccare il campo appropriato per attivare tale metodo di comunicazione, come il lancio il browser al sito web, </string>
+
+    <string name="helpCopyrightTitle">Copyright</string>
+    <string name="helpCopyright">Copyright, 2013, Water Treatment Products, Inc. e Nateemma LLC</string>
+
+    <!-- ======================= -->
+    <!-- Contact Us -->
+    <!-- ======================= -->
+
+    <string name="contactActivity">Contattaci</string>
+
+    <string name="contactWebsiteTitle">Sito Web</string>
+    <string name="contactWebsite">http://watertreatmentproducts.co.uk</string>
+
+    <string name="contactNumbersTitle">Numeri</string>
+    <string name="contactTelLabel">Telefono:</string>
+    <string name="contactTel">01495&#8211;792&#8211;790</string>
+    <string name="contactFaxLabel">FAX:</string>
+    <string name="contactFax">01495&#8211;792&#8211;090</string>
+
+    <string name="contactEmailsTitle">Email</string>
+    <string name="emailSalesLabel">Informazioni sulle vendite:</string>
+    <string name="emailSales">sales@watertreatmentproducts.co.uk</string>
+
+    <string name="emailHelpLabel">Supporto tecnico:</string>
+    <string name="emailHelp">help@watertreatmentproducts.co.uk</string>
+
+    <string name="emailInfoLabel">Informazioni generali:</string>
+    <string name="emailInfo">info@watertreatmentproducts.co.uk</string>
+
+    <string name="emailDistributorLabel">Opportunità di Distribuzione:</string>
+    <string name="emailDistributor">distributor@watertreatmentproducts.co.uk</string>
+
+    <string name="emailLeisureLabel">Pool Chemicals Supporto:</string>
+    <string name="emailLeisure">leisure@watertreatmentproducts.co.uk</string>
+
+    <string name="emailMediaLabel">Stampa Richieste:</string>
+    <string name="emailMedia">media@watertreatmentproducts.co.uk</string>
+
+    <string name="contactOfficeTitle">Indirizzo dell\'ufficio</string>
+    <string name="contactOffice">Unit 1, Gilchrist Thomas Industrial Estate, \nBlaenavon, Torfaen NP4 9RL, UK</string>
+
+</resources>

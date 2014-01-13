@@ -120,6 +120,9 @@ public class BoilerModel {
 	public Double s88Dosage;
 	public Double s88Usage;
 
+	public Double s95Dosage;
+	public Double s95Usage;
+
 
 	// FRAMEWORK METHODS
 
@@ -420,6 +423,10 @@ public class BoilerModel {
 			// S88
 			_sharedInstance.s88Dosage = 3.0 * _sharedInstance.MAlk;
 			_sharedInstance.s88Usage = _sharedInstance.s88Dosage * _sharedInstance.annualFeed / 1000.0 ;
+
+			// S95
+			_sharedInstance.s95Dosage = 5.0 * _sharedInstance.MAlk;
+			_sharedInstance.s95Usage = _sharedInstance.s95Dosage * _sharedInstance.annualFeed / 1000.0 ;
 
 		} catch (Exception e) {
 			Log.e(TAG, "calculateAmounts() - exception: " + e.toString());
