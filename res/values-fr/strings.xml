@@ -2,6 +2,7 @@
 <resources>
 
     <!-- FRENCH VERSION -->
+    
     <string name="app_name">WTP Estimation Outils</string>
     <string name="action_settings">Param&#233;tres</string>
     <string name="appVersion">v1.1.0</string>
@@ -28,6 +29,8 @@
     <string name="siteNameLabel">Nom du site</string>
     <string name="sitePrompt">Nom: </string>
     <string name="siteHint">Entrez le nom du site</string>
+    <string name="inputError">S\'il vous plaît entrer toutes les données</string>
+    
     <!--  -->
     <string name="boilerMissionLabel">Chaudi&#233;re Mission</string>
     <string name="summerTitle">Et&#233;</string>
@@ -309,27 +312,43 @@ WTP Ltd et les d&#233;veloppeurs offrent l\'application de bonne foi et sans gar
 l\'utilisation des produits chimiques seulement.
 \n\n
 Plus d\'informations sur les diff&#233;rents &#233;crans est fourni ci-dessous&#8230; :\n</string>
+    
     <string name="helpGeneralTitle">G&#233;n&#233;ral</string>
+        <string name="helpGeneral">
+Pour revenir aux écrans de données de produits, sélectionnez le type de système et le produit 
+         (Chaudière ou système de refroidissement, solides ou liquides). \n 
+         Pour des informations générales sur le CAP, appuyez sur le bouton "About Us". \n
+         Pour plus d\'informations contacter (téléphone, e-mails, site web, localisation), appuyez sur le "Contactez-nous" bouton \n
+        </string>
+    
     <string name="helpBoilerTitle">Estimates de Chaudi&#233;re &#233; Vapeur Produits</string>
-    <string name="helpBoiler">        Il s\'agit d\'un ensemble d\'&#233;crans o&#233; vous pouvez entrer les param&#233;tres de votre syst&#233;me, puis d\'estimer la quantit&#233; de produits de WTP associ&#233;s que vous auriez besoin,
+    <string name="helpBoiler">        Il s\'agit d\'un ensemble d\'&#233;crans o&#233; vous pouvez entrer les param&#233;tres de votre syst&#233;me, puis d\'estimer la quantit&#233; 
+        de produits de WTP associ&#233;s que vous auriez besoin,
 sur la base des donn&#233;es entr&#233;es.
 \n\n
 Sur le premier &#233;cran, saisissez les donn&#233;es pertinentes pour votre syst&#233;me, puis appuyez sur l\'ic&#233;ne "calculer" sur la barre du haut (&#233; droite).
 Ce sera ensuite afficher un r&#233;sum&#233; des estimations du produit.
 \n\n
-Notez qu\'il existe un grand nombre de champs de saisie, de sorte que le moyen le plus simple d\'entrer des donn&#233;es est d\'utiliser le bouton "Suivant" au-dessus du clavier - Cela permet de passer &#233; la prochaine
+Notez qu\'il existe un grand nombre de champs de saisie, de sorte que le moyen le plus simple d\'entrer des donn&#233;es est d\'utiliser le bouton "Suivant" au-dessus du clavier 
+- Cela permet de passer &#233; la prochaine
 champ sans avoir &#233; masquer le clavier manuellement d&#233;filer vers le champ suivant.
 Si elle est valide, les donn&#233;es sont enregistr&#233;es et restaur&#233;es lorsque vous ex&#233;cutez l\'application &#233; nouveau (permet d\'&#233;conomiser beaucoup de frappe).
 \n\n
 Si vous allez &#233; la peine de la saisie des donn&#233;es, vous avez probablement besoin de faire quelque chose avec elle! Pour aider &#233; cet &#233;gard, l\'ic&#233;ne "Email" r&#233;sumera
 les entr&#233;es et les estimations dans un e-mail que vous pouvez modifier et envoyer &#233; n\'importe quelle adresse e-mail. </string>
+
     <string name="helpCoolingTitle">Estimates de L\'eau de Refroidissement Produits</string>
-    <string name="helpCooling">Il s\'agit d\'un ensemble d\'&#233;crans qui est essentiellement la m&#233;me que les &#233;crans chaudi&#233;re d\'eau, mais pour l\'Eau efficacit&#233; des syst&#233;mes de Refroidissement
+    <string name="helpCooling">
+        Il s\'agit d\'un ensemble d\'&#233;crans qui est essentiellement la m&#233;me que les &#233;crans chaudi&#233;re d\'eau, mais pour l\'Eau efficacit&#233; 
+        des syst&#233;mes de Refroidissement
 \n\n
-Navigation et saisie de donn&#233;es sont similaires aux &#233;crans chaudi&#233;re d\'eau, et donn&#233;es sont &#233;galement restaur&#233;es &#233; partir de l\'utilisation pr&#233;c&#233;dente et e-mail peuvent &#233;tre envoy&#233;s si vous le souhaitez.</string>
+Navigation et saisie de donn&#233;es sont similaires aux &#233;crans chaudi&#233;re d\'eau, et donn&#233;es sont &#233;galement restaur&#233;es &#233; 
+partir de l\'utilisation pr&#233;c&#233;dente et e-mail peuvent &#233;tre envoy&#233;s si vous le souhaitez.
+</string>
    
     <string name="helpAboutTitle">Qui Sommes-Nous</string>
     <string name="helpAbout">Cet &#233;cran offre une introduction aux Water Treatment Products, Inc.</string>
+    
     <string name="helpContactTitle">Contactez-Nous</string>
     <string name="helpContact">Cet &#233;cran offre une vari&#233;t&#233; d\'informations de contact, y compris:
 \n\n
@@ -340,6 +359,7 @@ Navigation et saisie de donn&#233;es sont similaires aux &#233;crans chaudi&#233
 \n
 O&#233; support&#233; par le dispositif, vous pouvez toucher le champ appropri&#233; pour activer ce mode de communication, tels que le lancement du navigateur sur le site web,
 appelant le num&#233;ro de t&#233;l&#233;phone, e-mail ou l\'ouverture d\'une montrant une carte de l\'emplacement du bureau.</string>
+    
     <string name="helpCopyrightTitle">Droit d\'Auteur</string>
     <string name="helpCopyright">        \n
 Droit d\'Auteur&#169; 2013, Water Treatment Products Incorporated and Nateemma LLC\n</string>

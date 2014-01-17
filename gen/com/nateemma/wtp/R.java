@@ -35,20 +35,21 @@ public final class R {
     }
     public static final class drawable {
         public static final int bg3_faded=0x7f020000;
-        public static final int full_logo=0x7f020001;
-        public static final int help_main_screen=0x7f020002;
-        public static final int ic_action_email=0x7f020003;
-        public static final int ic_action_estimate=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int icon_boiler=0x7f020006;
-        public static final int icon_calculator=0x7f020007;
-        public static final int icon_cooling=0x7f020008;
-        public static final int icon_email=0x7f020009;
-        public static final int icon_liquid=0x7f02000a;
-        public static final int icon_solid=0x7f02000b;
-        public static final int orng_stroked=0x7f02000c;
-        public static final int splash=0x7f02000d;
-        public static final int stroked=0x7f02000e;
+        public static final int flow=0x7f020001;
+        public static final int full_logo=0x7f020002;
+        public static final int help_main_screen=0x7f020003;
+        public static final int ic_action_email=0x7f020004;
+        public static final int ic_action_estimate=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int icon_boiler=0x7f020007;
+        public static final int icon_calculator=0x7f020008;
+        public static final int icon_cooling=0x7f020009;
+        public static final int icon_email=0x7f02000a;
+        public static final int icon_liquid=0x7f02000b;
+        public static final int icon_solid=0x7f02000c;
+        public static final int orng_stroked=0x7f02000d;
+        public static final int splash=0x7f02000e;
+        public static final int stroked=0x7f02000f;
     }
     public static final class id {
         public static final int action_email=0x7f0900a8;
@@ -242,15 +243,15 @@ public final class R {
         public static final int results_actions=0x7f080002;
     }
     public static final class string {
-        public static final int CaHardnessHint=0x7f06002c;
-        public static final int CaHardnessPrompt=0x7f06002b;
-        public static final int CaHardnessUnit=0x7f06002d;
-        public static final int MAlkHint=0x7f060026;
-        public static final int MAlkPrompt=0x7f060025;
-        public static final int MAlkUnit=0x7f060027;
-        public static final int TDSHint=0x7f060023;
-        public static final int TDSPrompt=0x7f060022;
-        public static final int TDSUnit=0x7f060024;
+        public static final int CaHardnessHint=0x7f06002d;
+        public static final int CaHardnessPrompt=0x7f06002c;
+        public static final int CaHardnessUnit=0x7f06002e;
+        public static final int MAlkHint=0x7f060027;
+        public static final int MAlkPrompt=0x7f060026;
+        public static final int MAlkUnit=0x7f060028;
+        public static final int TDSHint=0x7f060024;
+        public static final int TDSPrompt=0x7f060023;
+        public static final int TDSUnit=0x7f060025;
         /**  ======================= 
  About Us 
  ======================= 
@@ -276,10 +277,10 @@ public final class R {
  About Us 
  ======================= 
          */
-        public static final int aboutActivity=0x7f0600df;
-        public static final int aboutText=0x7f0600e0;
+        public static final int aboutActivity=0x7f0600e0;
+        public static final int aboutText=0x7f0600e1;
         public static final int aboutUsLabel=0x7f06000a;
-        public static final int action_email=0x7f06003c;
+        public static final int action_email=0x7f06003d;
         /**  ======================= 
  Steam Boiler Data Entry 
  ======================= 
@@ -308,13 +309,18 @@ public final class R {
         public static final int action_estimate=0x7f06000d;
         public static final int action_settings=0x7f060001;
         public static final int appVersion=0x7f060002;
-        /**  FRENCH VERSION 
+        /**  ENGLISH 
+ GERMAN 
+ SPANISH 
+ FRENCH VERSION 
+ ITALIAN 
  DUTCH 
+ POLISH 
  PORTUGUESE 
          */
         public static final int app_name=0x7f060000;
-        public static final int b20Description=0x7f0600de;
-        public static final int b20Title=0x7f0600dd;
+        public static final int b20Description=0x7f0600df;
+        public static final int b20Title=0x7f0600de;
         /**   
   
   
@@ -324,7 +330,7 @@ public final class R {
   
   
          */
-        public static final int biocidesTitle=0x7f060091;
+        public static final int biocidesTitle=0x7f060092;
         /**   
   
   
@@ -334,7 +340,7 @@ public final class R {
   
   
          */
-        public static final int boilerDetailsLabel=0x7f060031;
+        public static final int boilerDetailsLabel=0x7f060032;
         /**   
   
   
@@ -343,7 +349,7 @@ public final class R {
   
   
          */
-        public static final int boilerDutyLabel=0x7f060012;
+        public static final int boilerDutyLabel=0x7f060013;
         public static final int boilerInputActivity=0x7f06000e;
         public static final int boilerLabel=0x7f060005;
         /**  ======================= 
@@ -371,10 +377,10 @@ public final class R {
  Steam Boiler Liquids Product Estimates 
  ======================= 
          */
-        public static final int boilerLiquidsResultsActivity=0x7f06004e;
+        public static final int boilerLiquidsResultsActivity=0x7f06004f;
         /**   
          */
-        public static final int boilerMissionLabel=0x7f060106;
+        public static final int boilerMissionLabel=0x7f060108;
         /**  ======================= 
  Steam Boiler Solids Product Estimates 
  ======================= 
@@ -400,7 +406,7 @@ public final class R {
  Steam Boiler Solids Product Estimates 
  ======================= 
          */
-        public static final int boilerSolidsResultsActivity=0x7f06003b;
+        public static final int boilerSolidsResultsActivity=0x7f06003c;
         /**  ======================= 
  Main Screen 
  ======================= 
@@ -427,39 +433,39 @@ public final class R {
  ======================= 
          */
         public static final int boilerWaterButtonText=0x7f060003;
-        public static final int c31Description=0x7f0600c6;
-        public static final int c31Title=0x7f0600c5;
-        public static final int c32Description=0x7f0600c8;
-        public static final int c32Title=0x7f0600c7;
-        public static final int c42tDescription=0x7f06009d;
-        public static final int c42tTitle=0x7f06009c;
-        public static final int c42tbDescription=0x7f0600d8;
-        public static final int c42tbTitle=0x7f0600d7;
-        public static final int c44Description=0x7f0600ca;
-        public static final int c44Title=0x7f0600c9;
-        public static final int c45Description=0x7f0600cc;
-        public static final int c45Title=0x7f0600cb;
-        public static final int c48Description=0x7f0600ce;
-        public static final int c48Title=0x7f0600cd;
-        public static final int c51Description=0x7f0600d0;
-        public static final int c51Title=0x7f0600cf;
-        public static final int c52Description=0x7f0600d2;
-        public static final int c52Title=0x7f0600d1;
-        public static final int c54Description=0x7f0600d4;
-        public static final int c54Title=0x7f0600d3;
-        public static final int c58Description=0x7f0600d6;
-        public static final int c58Title=0x7f0600d5;
-        public static final int chlor10Description=0x7f0600dc;
-        public static final int chlor10Title=0x7f0600db;
-        public static final int chloridesHint=0x7f06007f;
-        public static final int chloridesPrompt=0x7f06007e;
-        public static final int chloridesUnit=0x7f060080;
-        public static final int circulationHint=0x7f06006c;
-        public static final int circulationPrompt=0x7f06006b;
-        public static final int circulationUnit=0x7f06006d;
-        public static final int concFactorHint=0x7f060078;
-        public static final int concFactorPrompt=0x7f060077;
-        public static final int concFactorUnit=0x7f060079;
+        public static final int c31Description=0x7f0600c7;
+        public static final int c31Title=0x7f0600c6;
+        public static final int c32Description=0x7f0600c9;
+        public static final int c32Title=0x7f0600c8;
+        public static final int c42tDescription=0x7f06009e;
+        public static final int c42tTitle=0x7f06009d;
+        public static final int c42tbDescription=0x7f0600d9;
+        public static final int c42tbTitle=0x7f0600d8;
+        public static final int c44Description=0x7f0600cb;
+        public static final int c44Title=0x7f0600ca;
+        public static final int c45Description=0x7f0600cd;
+        public static final int c45Title=0x7f0600cc;
+        public static final int c48Description=0x7f0600cf;
+        public static final int c48Title=0x7f0600ce;
+        public static final int c51Description=0x7f0600d1;
+        public static final int c51Title=0x7f0600d0;
+        public static final int c52Description=0x7f0600d3;
+        public static final int c52Title=0x7f0600d2;
+        public static final int c54Description=0x7f0600d5;
+        public static final int c54Title=0x7f0600d4;
+        public static final int c58Description=0x7f0600d7;
+        public static final int c58Title=0x7f0600d6;
+        public static final int chlor10Description=0x7f0600dd;
+        public static final int chlor10Title=0x7f0600dc;
+        public static final int chloridesHint=0x7f060080;
+        public static final int chloridesPrompt=0x7f06007f;
+        public static final int chloridesUnit=0x7f060081;
+        public static final int circulationHint=0x7f06006d;
+        public static final int circulationPrompt=0x7f06006c;
+        public static final int circulationUnit=0x7f06006e;
+        public static final int concFactorHint=0x7f060079;
+        public static final int concFactorPrompt=0x7f060078;
+        public static final int concFactorUnit=0x7f06007a;
         /**  ======================= 
  Contact Us 
  ======================= 
@@ -485,18 +491,18 @@ public final class R {
  Contact Us 
  ======================= 
          */
-        public static final int contactActivity=0x7f0600ef;
-        public static final int contactEmailsTitle=0x7f0600f7;
-        public static final int contactFax=0x7f0600f6;
-        public static final int contactFaxLabel=0x7f0600f5;
-        public static final int contactNumbersTitle=0x7f0600f2;
-        public static final int contactOffice=0x7f060105;
-        public static final int contactOfficeTitle=0x7f060104;
-        public static final int contactTel=0x7f0600f4;
-        public static final int contactTelLabel=0x7f0600f3;
+        public static final int contactActivity=0x7f0600f1;
+        public static final int contactEmailsTitle=0x7f0600f9;
+        public static final int contactFax=0x7f0600f8;
+        public static final int contactFaxLabel=0x7f0600f7;
+        public static final int contactNumbersTitle=0x7f0600f4;
+        public static final int contactOffice=0x7f060107;
+        public static final int contactOfficeTitle=0x7f060106;
+        public static final int contactTel=0x7f0600f6;
+        public static final int contactTelLabel=0x7f0600f5;
         public static final int contactUsLabel=0x7f06000b;
-        public static final int contactWebsite=0x7f0600f1;
-        public static final int contactWebsiteTitle=0x7f0600f0;
+        public static final int contactWebsite=0x7f0600f3;
+        public static final int contactWebsiteTitle=0x7f0600f2;
         /**   
   
   
@@ -505,7 +511,7 @@ public final class R {
   
   
          */
-        public static final int coolingDutyLabel=0x7f060081;
+        public static final int coolingDutyLabel=0x7f060082;
         /**   
  ======================= 
  Cooling Water Data Entry (some re-use from above) 
@@ -539,7 +545,7 @@ public final class R {
  Cooling Water Data Entry (some re-use from above) 
  ======================= 
          */
-        public static final int coolingInputActivity=0x7f060069;
+        public static final int coolingInputActivity=0x7f06006a;
         public static final int coolingLabel=0x7f060006;
         /**  ======================= 
  Cooling Liquids Product Estimates 
@@ -574,10 +580,10 @@ public final class R {
  ======================= 
  some re-use from solids section 
          */
-        public static final int coolingLiquidsResultsActivity=0x7f06009e;
+        public static final int coolingLiquidsResultsActivity=0x7f06009f;
         /**   
          */
-        public static final int coolingMissionLabel=0x7f060107;
+        public static final int coolingMissionLabel=0x7f060109;
         /**  ======================= 
  Cooling Water Solids Product Estimates 
  ======================= 
@@ -603,14 +609,14 @@ public final class R {
  Cooling Water Solids Product Estimates 
  ======================= 
          */
-        public static final int coolingSolidsResultsActivity=0x7f060085;
+        public static final int coolingSolidsResultsActivity=0x7f060086;
         public static final int coolingWaterButtonText=0x7f060004;
-        public static final int costAnnumTitle=0x7f060088;
-        public static final int costAnnumUnits=0x7f060089;
-        public static final int costKgTitle=0x7f060086;
-        public static final int costKgUnits=0x7f060087;
-        public static final int costYearTitle=0x7f060108;
-        public static final int costYearUnits=0x7f060109;
+        public static final int costAnnumTitle=0x7f060089;
+        public static final int costAnnumUnits=0x7f06008a;
+        public static final int costKgTitle=0x7f060087;
+        public static final int costKgUnits=0x7f060088;
+        public static final int costYearTitle=0x7f06010a;
+        public static final int costYearUnits=0x7f06010b;
         /**   
   
   
@@ -620,40 +626,40 @@ public final class R {
   
   
          */
-        public static final int criteriaLabel=0x7f06006a;
-        public static final int cs4400Description=0x7f060093;
-        public static final int cs4400Title=0x7f060092;
-        public static final int cs4490Description=0x7f060097;
-        public static final int cs4490Title=0x7f060096;
-        public static final int cs4802Description=0x7f060095;
-        public static final int cs4802Title=0x7f060094;
-        public static final int cschlorDescription=0x7f06009b;
-        public static final int cschlorTitle=0x7f06009a;
-        public static final int daysHint=0x7f060083;
-        public static final int daysPrompt=0x7f06001b;
-        public static final int daysSumHint=0x7f06001c;
-        public static final int daysWinHint=0x7f06001d;
-        public static final int deltaTHint=0x7f06006f;
-        public static final int deltaTPrompt=0x7f06006e;
-        public static final int deltaTUnit=0x7f060070;
-        public static final int dosageTitle=0x7f06003e;
-        public static final int dosageUnits=0x7f06003f;
-        public static final int doseRate=0x7f0600a1;
-        public static final int doseRateAnnum01=0x7f0600a3;
-        public static final int doseRateAnnum02=0x7f0600a4;
-        public static final int doseRateUnits=0x7f0600a2;
-        public static final int emailDistributor=0x7f0600ff;
-        public static final int emailDistributorLabel=0x7f0600fe;
-        public static final int emailHelp=0x7f0600fb;
-        public static final int emailHelpLabel=0x7f0600fa;
-        public static final int emailInfo=0x7f0600fd;
-        public static final int emailInfoLabel=0x7f0600fc;
-        public static final int emailLeisure=0x7f060101;
-        public static final int emailLeisureLabel=0x7f060100;
-        public static final int emailMedia=0x7f060103;
-        public static final int emailMediaLabel=0x7f060102;
-        public static final int emailSales=0x7f0600f9;
-        public static final int emailSalesLabel=0x7f0600f8;
+        public static final int criteriaLabel=0x7f06006b;
+        public static final int cs4400Description=0x7f060094;
+        public static final int cs4400Title=0x7f060093;
+        public static final int cs4490Description=0x7f060098;
+        public static final int cs4490Title=0x7f060097;
+        public static final int cs4802Description=0x7f060096;
+        public static final int cs4802Title=0x7f060095;
+        public static final int cschlorDescription=0x7f06009c;
+        public static final int cschlorTitle=0x7f06009b;
+        public static final int daysHint=0x7f060084;
+        public static final int daysPrompt=0x7f06001c;
+        public static final int daysSumHint=0x7f06001d;
+        public static final int daysWinHint=0x7f06001e;
+        public static final int deltaTHint=0x7f060070;
+        public static final int deltaTPrompt=0x7f06006f;
+        public static final int deltaTUnit=0x7f060071;
+        public static final int dosageTitle=0x7f06003f;
+        public static final int dosageUnits=0x7f060040;
+        public static final int doseRate=0x7f0600a2;
+        public static final int doseRateAnnum01=0x7f0600a4;
+        public static final int doseRateAnnum02=0x7f0600a5;
+        public static final int doseRateUnits=0x7f0600a3;
+        public static final int emailDistributor=0x7f060101;
+        public static final int emailDistributorLabel=0x7f060100;
+        public static final int emailHelp=0x7f0600fd;
+        public static final int emailHelpLabel=0x7f0600fc;
+        public static final int emailInfo=0x7f0600ff;
+        public static final int emailInfoLabel=0x7f0600fe;
+        public static final int emailLeisure=0x7f060103;
+        public static final int emailLeisureLabel=0x7f060102;
+        public static final int emailMedia=0x7f060105;
+        public static final int emailMediaLabel=0x7f060104;
+        public static final int emailSales=0x7f0600fb;
+        public static final int emailSalesLabel=0x7f0600fa;
         /**   
   
   
@@ -663,34 +669,34 @@ public final class R {
   
   
          */
-        public static final int feedWaterLabel=0x7f060021;
-        public static final int h2073Description=0x7f0600b0;
-        public static final int h2073Title=0x7f0600af;
-        public static final int h207Description=0x7f0600ae;
-        public static final int h207Title=0x7f0600ad;
-        public static final int h2805Description=0x7f0600b4;
-        public static final int h2805Title=0x7f0600b3;
-        public static final int h280Description=0x7f0600b2;
-        public static final int h280Title=0x7f0600b1;
-        public static final int h3905Description=0x7f0600b8;
-        public static final int h3905Title=0x7f0600b7;
-        public static final int h390Description=0x7f0600b6;
-        public static final int h390Title=0x7f0600b5;
-        public static final int h391Description=0x7f0600ba;
-        public static final int h391Title=0x7f0600b9;
-        public static final int h423Description=0x7f0600bc;
-        public static final int h423Title=0x7f0600bb;
-        public static final int h4255Description=0x7f0600c0;
-        public static final int h4255Title=0x7f0600bf;
-        public static final int h425Description=0x7f0600be;
-        public static final int h425Title=0x7f0600bd;
-        public static final int h535Description=0x7f0600c2;
-        public static final int h535Title=0x7f0600c1;
-        public static final int h874Description=0x7f0600c4;
-        public static final int h874Title=0x7f0600c3;
-        public static final int halogenDose=0x7f0600ab;
-        public static final int helpAbout=0x7f0600ea;
-        public static final int helpAboutTitle=0x7f0600e9;
+        public static final int feedWaterLabel=0x7f060022;
+        public static final int h2073Description=0x7f0600b1;
+        public static final int h2073Title=0x7f0600b0;
+        public static final int h207Description=0x7f0600af;
+        public static final int h207Title=0x7f0600ae;
+        public static final int h2805Description=0x7f0600b5;
+        public static final int h2805Title=0x7f0600b4;
+        public static final int h280Description=0x7f0600b3;
+        public static final int h280Title=0x7f0600b2;
+        public static final int h3905Description=0x7f0600b9;
+        public static final int h3905Title=0x7f0600b8;
+        public static final int h390Description=0x7f0600b7;
+        public static final int h390Title=0x7f0600b6;
+        public static final int h391Description=0x7f0600bb;
+        public static final int h391Title=0x7f0600ba;
+        public static final int h423Description=0x7f0600bd;
+        public static final int h423Title=0x7f0600bc;
+        public static final int h4255Description=0x7f0600c1;
+        public static final int h4255Title=0x7f0600c0;
+        public static final int h425Description=0x7f0600bf;
+        public static final int h425Title=0x7f0600be;
+        public static final int h535Description=0x7f0600c3;
+        public static final int h535Title=0x7f0600c2;
+        public static final int h874Description=0x7f0600c5;
+        public static final int h874Title=0x7f0600c4;
+        public static final int halogenDose=0x7f0600ac;
+        public static final int helpAbout=0x7f0600ec;
+        public static final int helpAboutTitle=0x7f0600eb;
         /**  ======================= 
  Help 
  ======================= 
@@ -716,29 +722,30 @@ public final class R {
  Help 
  ======================= 
          */
-        public static final int helpActivity=0x7f0600e1;
-        public static final int helpBoiler=0x7f0600e6;
-        public static final int helpBoilerTitle=0x7f0600e5;
-        public static final int helpContact=0x7f0600ec;
-        public static final int helpContactTitle=0x7f0600eb;
-        public static final int helpCooling=0x7f0600e8;
-        public static final int helpCoolingTitle=0x7f0600e7;
-        public static final int helpCopyright=0x7f0600ee;
-        public static final int helpCopyrightTitle=0x7f0600ed;
-        public static final int helpGeneralTitle=0x7f0600e4;
-        public static final int helpIntro=0x7f0600e3;
-        public static final int helpIntroTitle=0x7f0600e2;
+        public static final int helpActivity=0x7f0600e2;
+        public static final int helpBoiler=0x7f0600e8;
+        public static final int helpBoilerTitle=0x7f0600e7;
+        public static final int helpContact=0x7f0600ee;
+        public static final int helpContactTitle=0x7f0600ed;
+        public static final int helpCooling=0x7f0600ea;
+        public static final int helpCoolingTitle=0x7f0600e9;
+        public static final int helpCopyright=0x7f0600f0;
+        public static final int helpCopyrightTitle=0x7f0600ef;
+        public static final int helpGeneral=0x7f0600e6;
+        public static final int helpGeneralTitle=0x7f0600e5;
+        public static final int helpIntro=0x7f0600e4;
+        public static final int helpIntroTitle=0x7f0600e3;
         public static final int helpLabel=0x7f060009;
-        public static final int hoursHint=0x7f060082;
-        public static final int hoursPrompt=0x7f060018;
-        public static final int hoursSumHint=0x7f060019;
-        public static final int hoursWinHint=0x7f06001a;
-        public static final int hs2097Description=0x7f06008c;
-        public static final int hs2097Title=0x7f06008b;
-        public static final int hs3990Description=0x7f060090;
-        public static final int hs3990Title=0x7f06008f;
-        public static final int hs4390Description=0x7f06008e;
-        public static final int hs4390Title=0x7f06008d;
+        public static final int hoursHint=0x7f060083;
+        public static final int hoursPrompt=0x7f060019;
+        public static final int hoursSumHint=0x7f06001a;
+        public static final int hoursWinHint=0x7f06001b;
+        public static final int hs2097Description=0x7f06008d;
+        public static final int hs2097Title=0x7f06008c;
+        public static final int hs3990Description=0x7f060091;
+        public static final int hs3990Title=0x7f060090;
+        public static final int hs4390Description=0x7f06008f;
+        public static final int hs4390Title=0x7f06008e;
         /**   
   
   
@@ -748,7 +755,8 @@ public final class R {
   
   
          */
-        public static final int inhibitorTitle=0x7f06008a;
+        public static final int inhibitorTitle=0x7f06008b;
+        public static final int inputError=0x7f060012;
         public static final int liquidLabel=0x7f060008;
         /**   
   
@@ -759,99 +767,99 @@ public final class R {
   
   
          */
-        public static final int makeupLabel=0x7f06007a;
-        public static final int maxTDSHint=0x7f060033;
-        public static final int maxTDSPrompt=0x7f060032;
-        public static final int maxTDSUnit=0x7f060034;
-        public static final int minCausticHint=0x7f060039;
-        public static final int minCausticPrompt=0x7f060038;
-        public static final int minCausticUnit=0x7f06003a;
-        public static final int minDoseTitle=0x7f0600a5;
-        public static final int minDoseUnits=0x7f0600a6;
-        public static final int minSulphiteHint=0x7f060036;
-        public static final int minSulphitePrompt=0x7f060035;
-        public static final int minSulphiteUnit=0x7f060037;
-        public static final int nOxBiocides01=0x7f06009f;
-        public static final int nOxBiocides02=0x7f0600a0;
-        public static final int oxBiocides01=0x7f0600a7;
-        public static final int oxBiocides02=0x7f0600a8;
-        public static final int oxDescription=0x7f0600ac;
-        public static final int oxHdr01=0x7f0600a9;
-        public static final int oxHdr02=0x7f0600aa;
-        public static final int pHHint=0x7f060029;
-        public static final int pHPrompt=0x7f060028;
-        public static final int pHUnit=0x7f06002a;
-        public static final int productTitle=0x7f06003d;
-        public static final int s10Description=0x7f060052;
-        public static final int s10Title=0x7f060051;
-        public static final int s123Description=0x7f060054;
-        public static final int s123Title=0x7f060053;
-        public static final int s124Description=0x7f060060;
-        public static final int s124Title=0x7f06005f;
-        public static final int s125Description=0x7f060056;
-        public static final int s125Title=0x7f060055;
-        public static final int s19Description=0x7f06005c;
-        public static final int s19Title=0x7f06005b;
-        public static final int s22Description=0x7f060062;
-        public static final int s22Title=0x7f060061;
-        public static final int s23Description=0x7f060064;
-        public static final int s23Title=0x7f060063;
-        public static final int s26Description=0x7f060058;
-        public static final int s26Title=0x7f060057;
-        public static final int s28Description=0x7f06005a;
-        public static final int s28Title=0x7f060059;
-        public static final int s456Description=0x7f06005e;
-        public static final int s456Title=0x7f06005d;
-        public static final int s5Description=0x7f060050;
-        public static final int s5Title=0x7f06004f;
-        public static final int s88Description=0x7f060066;
-        public static final int s88Title=0x7f060065;
-        public static final int s95Description=0x7f060068;
-        public static final int s95Title=0x7f060067;
-        public static final int scg1Description=0x7f060099;
-        public static final int scg1Title=0x7f060098;
+        public static final int makeupLabel=0x7f06007b;
+        public static final int maxTDSHint=0x7f060034;
+        public static final int maxTDSPrompt=0x7f060033;
+        public static final int maxTDSUnit=0x7f060035;
+        public static final int minCausticHint=0x7f06003a;
+        public static final int minCausticPrompt=0x7f060039;
+        public static final int minCausticUnit=0x7f06003b;
+        public static final int minDoseTitle=0x7f0600a6;
+        public static final int minDoseUnits=0x7f0600a7;
+        public static final int minSulphiteHint=0x7f060037;
+        public static final int minSulphitePrompt=0x7f060036;
+        public static final int minSulphiteUnit=0x7f060038;
+        public static final int nOxBiocides01=0x7f0600a0;
+        public static final int nOxBiocides02=0x7f0600a1;
+        public static final int oxBiocides01=0x7f0600a8;
+        public static final int oxBiocides02=0x7f0600a9;
+        public static final int oxDescription=0x7f0600ad;
+        public static final int oxHdr01=0x7f0600aa;
+        public static final int oxHdr02=0x7f0600ab;
+        public static final int pHHint=0x7f06002a;
+        public static final int pHPrompt=0x7f060029;
+        public static final int pHUnit=0x7f06002b;
+        public static final int productTitle=0x7f06003e;
+        public static final int s10Description=0x7f060053;
+        public static final int s10Title=0x7f060052;
+        public static final int s123Description=0x7f060055;
+        public static final int s123Title=0x7f060054;
+        public static final int s124Description=0x7f060061;
+        public static final int s124Title=0x7f060060;
+        public static final int s125Description=0x7f060057;
+        public static final int s125Title=0x7f060056;
+        public static final int s19Description=0x7f06005d;
+        public static final int s19Title=0x7f06005c;
+        public static final int s22Description=0x7f060063;
+        public static final int s22Title=0x7f060062;
+        public static final int s23Description=0x7f060065;
+        public static final int s23Title=0x7f060064;
+        public static final int s26Description=0x7f060059;
+        public static final int s26Title=0x7f060058;
+        public static final int s28Description=0x7f06005b;
+        public static final int s28Title=0x7f06005a;
+        public static final int s456Description=0x7f06005f;
+        public static final int s456Title=0x7f06005e;
+        public static final int s5Description=0x7f060051;
+        public static final int s5Title=0x7f060050;
+        public static final int s88Description=0x7f060067;
+        public static final int s88Title=0x7f060066;
+        public static final int s95Description=0x7f060069;
+        public static final int s95Title=0x7f060068;
+        public static final int scg1Description=0x7f06009a;
+        public static final int scg1Title=0x7f060099;
         public static final int siteHint=0x7f060011;
         public static final int siteNameLabel=0x7f06000f;
         public static final int sitePrompt=0x7f060010;
         public static final int solidLabel=0x7f060007;
         public static final int space=0x7f06000c;
-        public static final int ss1095Description=0x7f060047;
-        public static final int ss1095Title=0x7f060046;
-        public static final int ss1295Description=0x7f060043;
-        public static final int ss1295Title=0x7f060042;
-        public static final int ss1350Description=0x7f060045;
-        public static final int ss1350Title=0x7f060044;
-        public static final int ss1995Description=0x7f060049;
-        public static final int ss1995Title=0x7f060048;
-        public static final int ss2295Description=0x7f06004b;
-        public static final int ss2295Title=0x7f06004a;
-        public static final int ss8985Description=0x7f06004d;
-        public static final int ss8985Title=0x7f06004c;
-        public static final int steamPrompt=0x7f060015;
-        public static final int steamSumHint=0x7f060016;
-        public static final int steamWinHint=0x7f060017;
-        public static final int summerTitle=0x7f060013;
-        public static final int sumpVolumeHint=0x7f060072;
-        public static final int sumpVolumePrompt=0x7f060071;
-        public static final int sumpVolumeUnit=0x7f060073;
-        public static final int sysVolumeHint=0x7f060075;
-        public static final int sysVolumePrompt=0x7f060074;
-        public static final int sysVolumeUnit=0x7f060076;
-        public static final int tempHint=0x7f06002f;
-        public static final int tempPrompt=0x7f06002e;
-        public static final int tempUnit=0x7f060030;
-        public static final int totalHardnessHint=0x7f06007c;
-        public static final int totalHardnessPrompt=0x7f06007b;
-        public static final int totalHardnessUnit=0x7f06007d;
-        public static final int ub30Description=0x7f0600da;
-        public static final int ub30Title=0x7f0600d9;
-        public static final int usageTitle=0x7f060040;
-        public static final int usageUnits=0x7f060041;
-        public static final int weeksHint=0x7f060084;
-        public static final int weeksPrompt=0x7f06001e;
-        public static final int weeksSumHint=0x7f06001f;
-        public static final int weeksWinHint=0x7f060020;
-        public static final int winterTitle=0x7f060014;
+        public static final int ss1095Description=0x7f060048;
+        public static final int ss1095Title=0x7f060047;
+        public static final int ss1295Description=0x7f060044;
+        public static final int ss1295Title=0x7f060043;
+        public static final int ss1350Description=0x7f060046;
+        public static final int ss1350Title=0x7f060045;
+        public static final int ss1995Description=0x7f06004a;
+        public static final int ss1995Title=0x7f060049;
+        public static final int ss2295Description=0x7f06004c;
+        public static final int ss2295Title=0x7f06004b;
+        public static final int ss8985Description=0x7f06004e;
+        public static final int ss8985Title=0x7f06004d;
+        public static final int steamPrompt=0x7f060016;
+        public static final int steamSumHint=0x7f060017;
+        public static final int steamWinHint=0x7f060018;
+        public static final int summerTitle=0x7f060014;
+        public static final int sumpVolumeHint=0x7f060073;
+        public static final int sumpVolumePrompt=0x7f060072;
+        public static final int sumpVolumeUnit=0x7f060074;
+        public static final int sysVolumeHint=0x7f060076;
+        public static final int sysVolumePrompt=0x7f060075;
+        public static final int sysVolumeUnit=0x7f060077;
+        public static final int tempHint=0x7f060030;
+        public static final int tempPrompt=0x7f06002f;
+        public static final int tempUnit=0x7f060031;
+        public static final int totalHardnessHint=0x7f06007d;
+        public static final int totalHardnessPrompt=0x7f06007c;
+        public static final int totalHardnessUnit=0x7f06007e;
+        public static final int ub30Description=0x7f0600db;
+        public static final int ub30Title=0x7f0600da;
+        public static final int usageTitle=0x7f060041;
+        public static final int usageUnits=0x7f060042;
+        public static final int weeksHint=0x7f060085;
+        public static final int weeksPrompt=0x7f06001f;
+        public static final int weeksSumHint=0x7f060020;
+        public static final int weeksWinHint=0x7f060021;
+        public static final int winterTitle=0x7f060015;
     }
     public static final class style {
         /** 

@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- ITALIAN -->
+    
     <string name="app_name">WTP Stima Tools</string>
     <string name="action_settings">Impostazioni</string>
 
@@ -26,6 +28,8 @@
     <string name="siteNameLabel">Nome sito</string>
     <string name="sitePrompt">Nome:</string>
     <string name="siteHint">Inserire il nome del sito</string>
+    <string name="inputError">Si prega di inserire tutti i dati</string>
+    
     <!--  -->
     <string name="boilerDutyLabel">Caldaia Duty</string>
     <string name="summerTitle">Estate</string>
@@ -273,7 +277,28 @@
     <!-- ======================= -->
     <string name="aboutActivity">Chi siamo</string>
     <string name="aboutText">\n\n
-Water Treatment Products Ltd, fondata nel 1999, formulazione e produzione di specialità chimiche per una vasta gamma di aziende di trattamento delle acque e applicazioni. Se avete bisogno di prodotti chimici per l\'acqua della caldaia, acqua di raffreddamento, osmosi inversa, clorazione o disinfezione siamo esperti in produzione di soluzioni chiare per le vostre esigenze di trattamento delle acque. \n \n Per mantenere gli standard di qualità, abbiamo il controllo totale di tutte le formulazioni chimiche - l\'acquisto di materie prime di qualità, la scelta degli imballaggi e dei metodi di erogazione efficienti - assicurare che godete i prodotti migliori per soddisfare le vostre esigenze individuali. I prodotti sono fabbricati nel nostro, completamente ristrette, moderna struttura in Galles del Sud - una posizione ideale per una facile distribuzione nel Regno Unito e nei mercati d\'oltremare. \n \n Qualunque sia la formulazione, siamo in grado di soddisfare le vostre esigenze. Abbiamo oltre 200 formulazioni collaudate disponibili, quindi qualunque siano le vostre esigenze, avremo una soluzione. Trattamento delle acque Prodotti offerta: \n \n • formulazioni uniche \n • Gamma completa di prodotti chimici, polveri e liquidi \n • Kit Water Test - Drop Test Set e Dip Slides: Single, ingegneri e chimici kit specifici \n • Prodotti chimici solidi \n • proprie sostanze chimiche etichette \n • Scelta di confezioni \n • I prodotti fabbricati nel nostro stabilimento \n • ISO 9001 di qualità garantita \n • ISO 14001 standard ambientali \n • Investors in People \n • Completamente compatibile con tutte le normative \n • CLP (GHS) SDS \n • CHIPS III e n ADR \ • Esperienza nel mercato di esportazione \n • On-site DGSA e Chimici \n </string>
+Water Treatment Products Ltd, fondata nel 1999, formulazione e produzione di specialità chimiche per una vasta gamma di aziende di trattamento delle acque e applicazioni. 
+Se avete bisogno di prodotti chimici per l\'acqua della caldaia, acqua di raffreddamento, osmosi inversa, clorazione o disinfezione siamo esperti in produzione di 
+soluzioni chiare per le vostre esigenze di trattamento delle acque. \n \n Per mantenere gli standard di qualità, abbiamo il controllo totale di tutte le formulazioni 
+chimiche - l\'acquisto di materie prime di qualità, la scelta degli imballaggi e dei metodi di erogazione efficienti - assicurare che godete i prodotti migliori per 
+soddisfare le vostre esigenze individuali. I prodotti sono fabbricati nel nostro, completamente ristrette, moderna struttura in Galles del Sud - una posizione ideale 
+per una facile distribuzione nel Regno Unito e nei mercati d\'oltremare. \n \n Qualunque sia la formulazione, siamo in grado di soddisfare le vostre esigenze. 
+Abbiamo oltre 200 formulazioni collaudate disponibili, quindi qualunque siano le vostre esigenze, avremo una soluzione. Trattamento delle acque Prodotti offerta: \n \n
+ • formulazioni uniche \n
+  • Gamma completa di prodotti chimici, polveri e liquidi \n
+   • Kit Water Test - Drop Test Set e Dip Slides: Single, ingegneri e chimici kit specifici \n
+    • Prodotti chimici solidi \n
+     • proprie sostanze chimiche etichette \n
+     • Scelta di confezioni \n
+      • I prodotti fabbricati nel nostro stabilimento \n
+       • ISO 9001 di qualità garantita \n
+        • ISO 14001 standard ambientali \n
+         • Investors in People \n
+          • Completamente compatibile con tutte le normative \n
+           • CLP (GHS) SDS \n
+            • CHIPS III e n ADR \n
+             • Esperienza nel mercato di esportazione \n
+              • On-site DGSA e Chimici \n </string>
 
     <!-- ======================= -->
     <!-- Help -->
@@ -282,17 +307,37 @@ Water Treatment Products Ltd, fondata nel 1999, formulazione e produzione di spe
     <string name="helpActivity">Aiuto</string>
     <string name="helpIntroTitle">Introduzione</string>
     <string name="helpIntro">
-Questa applicazione fornisce una serie di calcolatrici per stimare la quantità di prodotti necessari per affrontare il trattamento della caldaia e di raffreddamento Water Systems. \n L\'applicazione e calcolatori sono forniti in buona fede a titolo indicativo, i parametri del sito possono cambiare e dettagli acquisite in fase di indagine potrebbero non essere sempre preciso. WTP Ltd e gli sviluppatori offrono la app in buona fede e senza garanzia, il suo scopo è fornita di un possibile utilizzo di sostanze chimiche solo. \n \n </string>
+Questa applicazione fornisce una serie di calcolatrici per stimare la quantità di prodotti necessari per affrontare il trattamento 
+della caldaia e di raffreddamento Water Systems. \n L\'applicazione e calcolatori sono forniti in buona fede a titolo indicativo, 
+i parametri del sito possono cambiare e dettagli acquisite in fase di indagine potrebbero non essere sempre preciso. WTP Ltd e gli
+ sviluppatori offrono la app in buona fede e senza garanzia, il suo scopo è fornita di un possibile utilizzo di sostanze chimiche solo. \n \n 
+ Maggiori informazioni sulle varie schermate di seguito si riporta &#8230; \ n</string>
 
     <string name="helpGeneralTitle">Generale</string>
-
+        <string name="helpGeneral">
+                        Per andare alle schermate di dati di prodotto, selezionare il tipo di sistema e di prodotto
+         (Caldaia o sistema di raffreddamento, solido o liquido Products). \ n 
+         Per informazioni generali sui WTP, toccare il pulsante "Chi siamo". \ N 
+         Per informazioni di contatto (telefono, e-mail, sito web, location), toccare il "Contattaci" tasto \ n
+        </string>
+    
     <string name="helpBoilerTitle">Le stime Steam Boiler prodotto</string>
     <string name="helpBoiler">
-Questo è un insieme di schermate in cui è possibile inserire i parametri per il sistema e quindi stimare la quantità di prodotti WTP associati che si avrebbe bisogno, sulla base dei dati inseriti. \n \n Nella prima schermata, immettere i dati rilevanti per il sistema, quindi toccare l\'icona "calcolare" sulla barra in alto (a destra). Questo sarà quindi visualizzato un riepilogo delle stime del prodotto. \n \n noti che c\'è un sacco di campi di input, quindi il modo più semplice per inserire i dati è quello di utilizzare il pulsante "Avanti" sopra la tastiera - questa si sposterà al campo successivo senza dover chiudere la tastiera e manualmente scorrere fino al campo successivo. Se valido, i dati vengono salvati e ripristinati quando si esegue nuovamente l\'applicazione (risparmiare un sacco di battitura). \n \n Se state andando alla difficoltà di inserimento dei dati, probabilmente avete bisogno di fare qualcosa con lui! Per aiutare in questo senso, l\'icona "Email" riassumerà </string>
+Questo è un insieme di schermate in cui è possibile inserire i parametri per il sistema e quindi stimare la quantità di prodotti 
+WTP associati che si avrebbe bisogno, sulla base dei dati inseriti. \n \n Nella prima schermata, immettere i dati rilevanti per 
+il sistema, quindi toccare l\'icona "calcolare" sulla barra in alto (a destra). Questo sarà quindi visualizzato un riepilogo delle stime del prodotto. \n \n
+ noti che c\'è un sacco di campi di input, quindi il modo più semplice per inserire i dati è quello di utilizzare il pulsante "Avanti" 
+ sopra la tastiera - questa si sposterà al campo successivo senza dover chiudere la tastiera e manualmente scorrere fino al campo successivo. 
+ Se valido, i dati vengono salvati e ripristinati quando si esegue nuovamente l\'applicazione (risparmiare un sacco di battitura). \n \n
+
+  Se avete intenzione alla difficoltà di inserimento dei dati, probabilmente avete bisogno di fare qualcosa con lui! Per aiutare in questo senso, l\'icona "Email" riassumerà 
+gli ingressi e le stime in una e-mail che è possibile modificare e inviare a qualsiasi indirizzo email.</string>
 
     <string name="helpCoolingTitle">Raffreddamento stime Water prodotto</string>
     <string name="helpCooling">
-Si tratta di una serie di schermate che è essenzialmente lo stesso come gli schermi bollitore d\'acqua, ma per il raffreddamento Water Systems \n \n 
+Questo è un insieme di schermi che è essenzialmente lo stesso come gli schermi bollitore, ma per torri di raffreddamento 
+\n \n 
+Navigazione e l\'immissione di dati sono simili agli schermi bollitore d\'acqua, ei dati vengono anche ripristinati dall\'uso precedente e-mail possono essere inviati, se lo desideri.
 </string>
 
     <string name="helpAboutTitle">Chi siamo</string>
@@ -300,7 +345,14 @@ Si tratta di una serie di schermate che è essenzialmente lo stesso come gli sch
 
     <string name="helpContactTitle">Contattaci</string>
     <string name="helpContact">
-Questa schermata fornisce una varietà di informazioni di contatto, tra cui: \n \n - Sito web \n - Telefono e fax numeri \n - vari indirizzi e-mail \n - ufficio indirizzo \n \n Se supportato dal dispositivo, è possibile toccare il campo appropriato per attivare tale metodo di comunicazione, come il lancio il browser al sito web, </string>
+Questa schermata fornisce una varietà di informazioni di contatto, tra cui: \n \n
+ - Sito web \n
+  - Telefono e fax numeri \n
+  - vari indirizzi e-mail \n
+  - ufficio indirizzo \n \n
+   Quando supportato dal dispositivo, è possibile toccare il campo appropriato per attivare tale metodo di comunicazione, come il lancio il browser al sito web, 
+chiamando il numero di telefono, avviando una e-mail o mostrando una mappa della posizione dell\'ufficio.
+</string>
 
     <string name="helpCopyrightTitle">Copyright</string>
     <string name="helpCopyright">Copyright, 2013, Water Treatment Products, Inc. e Nateemma LLC</string>

@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- GERMAN -->
+    
     <string name="app_name">WTP Schätzung Werkzeuge</string>
     <string name="action_settings">Einstellungen</string>
 
@@ -26,6 +28,8 @@
     <string name="siteNameLabel">Site-Name</string>
     <string name="sitePrompt">Name:</string>
     <string name="siteHint">Geben Sie Site-Namen</string>
+    <string name="inputError">Bitte geben Sie alle Daten</string>
+    
     <!--  -->
     <string name="boilerDutyLabel">Kesselpflicht</string>
     <string name="summerTitle">Sommer</string>
@@ -309,8 +313,14 @@ WTP Ltd und die Entwickler bieten die App in gutem Glauben und ohne Gewährleist
 
 Weitere Informationen zu den verschiedenen Bildschirmen finden Sie weiter unten &#8230;
 </string>
-    <string name="helpGeneralTitle">Allgemeine
-</string>
+    <string name="helpGeneralTitle">Allgemeine</string>
+        <string name="helpGeneral">
+            Um zu den Produktdaten-Bildschirme gehen, wählen Sie die Art der System-und Produkt 
+         (Boiler oder Kühlsystem, Feste oder flüssige Produkte). \ n 
+         Für allgemeine Informationen zu WTP, berühren Sie die "Über uns"-Taste. \ N 
+         Für Kontaktdaten (Telefon, E-Mails, Web-Site, Ort), berühren Sie die "Kontakt"-Button \ n
+        </string>
+        
     <string name="helpBoilerTitle">Steam Boiler Produkt Schätzungen</string>
     <string name="helpBoiler">
 Das ist eine Reihe von Bildschirmen, in dem Sie Parameter für Ihr System eingeben und dann Schätzung der Höhe der damit 

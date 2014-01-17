@@ -19,7 +19,7 @@ public class BoilerInputActivity extends Activity {
 	private static BoilerModel mBoilerModel = null;
 
 	private Context mContext;
-	
+
 	private String mEstType = ""; // estimate type (solid or liquid)
 
 	// Input Views
@@ -48,7 +48,7 @@ public class BoilerInputActivity extends Activity {
 		try {
 
 			mContext = this;
-		    getActionBar().setDisplayHomeAsUpEnabled(true);
+			getActionBar().setDisplayHomeAsUpEnabled(true);
 
 			setContentView(R.layout.boiler_entry);
 
@@ -73,7 +73,7 @@ public class BoilerInputActivity extends Activity {
 
 			// load the initial data
 			loadData();
-			
+
 			// get the estimate type
 			mEstType = getIntent().getStringExtra(LocalIntents.ARG0);
 			if ((mEstType==null) || (mEstType.length()==0)){
@@ -130,7 +130,12 @@ public class BoilerInputActivity extends Activity {
 
 	// routine to notify the user that there is an incomplete field
 	private void notifyInputError(){
-		Toast.makeText(getApplicationContext(), "Please enter all data", Toast.LENGTH_SHORT).show();
+		try{
+			String description = mContext.getResources().getString(R.string.inputError);
+			Toast.makeText(getApplicationContext(), description, Toast.LENGTH_SHORT).show();
+		} catch (Exception e){
+			Log.e(TAG, "Error displaying dialogue: "+e.toString());
+		}
 	}
 
 	// APP LOGIC

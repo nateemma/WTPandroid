@@ -28,6 +28,8 @@
     <string name="siteNameLabel">Nome do site</string>
     <string name="sitePrompt">Nome:</string>
     <string name="siteHint">Digite o nome do site</string>
+    <string name="inputError">Por favor, indique todos os dados</string>
+    
     <!--  -->
     <string name="boilerDutyLabel">Caldeira Dever</string>
     <string name="summerTitle">Verão</string>
@@ -275,7 +277,29 @@
     <!-- ======================= -->
     <string name="aboutActivity">Quem Somos</string>
     <string name="aboutText">\n\n
-Tratamento de Água Products Ltd, fundada em 1999, formular e fabricar produtos químicos especializados para uma ampla gama de empresas de tratamento de água e aplicações. Se você precisa de produtos químicos para a água da caldeira, água de arrefecimento, osmose reversa, cloração ou desinfecção que são especialistas em produzir soluções claras para suas necessidades de tratamento de água. \n \n Para manter os padrões de qualidade, temos o controle total de todas as formulações químicas - a compra de matérias-primas de qualidade, a escolha da embalagem e métodos de entrega eficientes - garantindo que você desfrutar os melhores produtos para atender às suas necessidades individuais. Os produtos são fabricados em nossa própria totalmente delimitadas, instalação e moderna em South Wales - idealmente situado para fácil distribuição para o Reino Unido e os mercados no exterior. \n \n O que quer formulação, podemos atender às suas necessidades. Temos mais de 200 experimentadas e testadas formulações disponíveis, então o que são as suas necessidades, teremos uma solução. Tratamento de Água Produtos oferta: \n \n • formulações exclusivas \n • Uma gama completa de produtos químicos, pós e líquidos \n • Kits de Teste de Água - Drop Test Kits e Dip Slides: Individual, engenheiros e químicos Kits específicos \n • Chemicals Sólidos \n • produtos químicos selo próprio \n • Escolha de tamanhos de embalagem \n • Os produtos fabricados em nossa própria planta \n • ISO 9001 de qualidade garantida \n • ISO 14001 normas ambientais \n • Investors in People \n • Totalmente compatível com toda a legislação \n • CLP (GHS) MSDS \n • CHIPS III e ADR \n • Experiência no mercado de exportação \n • No local DGSA e Químicos \n </string>
+Tratamento de Água Products Ltd, fundada em 1999, formular e fabricar produtos químicos especializados para uma ampla gama de empresas de tratamento de 
+água e aplicações. Se você precisa de produtos químicos para a água da caldeira, água de arrefecimento, osmose reversa, cloração ou desinfecção que são 
+especialistas em produzir soluções claras para suas necessidades de tratamento de água. \n \n Para manter os padrões de qualidade, temos o controle total 
+de todas as formulações químicas - a compra de matérias-primas de qualidade, a escolha da embalagem e métodos de entrega eficientes - garantindo que você 
+desfrutar os melhores produtos para atender às suas necessidades individuais. Os produtos são fabricados em nossa própria totalmente delimitadas, instalação 
+e moderna em South Wales - idealmente situado para fácil distribuição para o Reino Unido e os mercados no exterior. \n \n O que quer formulação, podemos 
+atender às suas necessidades. Temos mais de 200 experimentadas e testadas formulações disponíveis, então o que são as suas necessidades, teremos uma solução. 
+Tratamento de Água Produtos oferta: \n \n
+ • formulações exclusivas \n
+  • Uma gama completa de produtos químicos, pós e líquidos \n
+   • Kits de Teste de Água - Drop Test Kits e Dip Slides: Individual, engenheiros e químicos Kits específicos \n
+    • Chemicals Sólidos \n
+     • produtos químicos selo próprio \n
+     • Escolha de tamanhos de embalagem \n
+     • Os produtos fabricados em nossa própria planta \n
+      • ISO 9001 de qualidade garantida \n
+      • ISO 14001 normas ambientais \n
+       • Investors in People \n
+       • Totalmente compatível com toda a legislação \n
+        • CLP (GHS) MSDS \n
+        • CHIPS III e ADR \n
+        • Experiência no mercado de exportação \n
+         • No local DGSA e Químicos \n </string>
 
     <!-- ======================= -->
     <!-- Help -->
@@ -284,19 +308,39 @@ Tratamento de Água Products Ltd, fundada em 1999, formular e fabricar produtos 
     <string name="helpActivity">Ajuda</string>
     <string name="helpIntroTitle">Introdução</string>
     <string name="helpIntro">
-Este aplicativo fornece um conjunto de calculadoras para estimar a quantidade de produtos necessários para abordar o tratamento da Caldeira e Sistemas de Resfriamento de Água. \n O aplicativo e calculadoras são oferecidos de boa fé apenas para orientação; parâmetros do local pode mudar e detalhes obtidos na fase pesquisa pode não ser sempre precisas. WTP Ltd e os desenvolvedores oferecer o aplicativo de boa fé e sem garantia, o seu objectivo é para orientação geral de só é possível o uso de produtos químicos. \n \n 
-</string>
+Este aplicativo fornece um conjunto de calculadoras para estimar a quantidade de produtos necessários para abordar o tratamento da Caldeira e Sistemas 
+de Resfriamento de Água. \n O aplicativo e calculadoras são oferecidos de boa fé apenas para orientação; parâmetros do local pode mudar e detalhes 
+obtidos na fase pesquisa pode não ser sempre precisas. WTP Ltd e os desenvolvedores oferecer o aplicativo de boa fé e sem garantia, o seu objectivo é 
+para orientação geral de só é possível o uso de produtos químicos. \n \n 
+Mais informações sobre as várias telas é fornecida abaixo
+ &#8230;\n
+ </string>
 
     <string name="helpGeneralTitle">Geral</string>
-
+        <string name="helpGeneral">
+            Para ir para as telas de dados do produto, selecione o tipo de sistema e produtos 
+         (Caldeira ou sistema de refrigeração, sólidos ou produtos líquidos). \n 
+         Para informações gerais sobre WTP, toque no botão "About Us". \n 
+         Para informações de contato (telefone, e-mails, web site, localização), toque no "Fale Conosco" botão \n
+        </string>
+    
     <string name="helpBoilerTitle">Estimativas Caldeira Produto</string>
     <string name="helpBoiler">
-Este é um conjunto de ecrãs onde pode inserir os parâmetros para seu sistema e, em seguida, estimar a quantidade de produtos WTP associados que você precisa, com base nos dados inseridos. \n \n Na primeira tela, digite os dados relevantes para o seu sistema, em seguida, toque no ícone "calcular" na barra superior (à direita). Este, então, exibir um resumo das estimativas do produto. \n \n Note que há um monte de campos de entrada, de modo que a maneira mais fácil de inserir dados é usar o botão "Next" acima do teclado - o que irá passar para o próximo campo, sem ter que dispensar o teclado e manualmente se deslocar para o próximo campo. Se válido, os dados são guardados e restaurados quando você executar o aplicativo novamente (poupa um monte de digitação). \n \n Se você estiver indo para o trabalho de inserir os dados, você provavelmente terá que fazer algo com ele! Para ajudar nesse sentido, o ícone "E-mail" resumirá 
+Este é um conjunto de ecrãs onde pode inserir os parâmetros para seu sistema e, em seguida, estimar a quantidade de produtos WTP associados que você precisa, 
+com base nos dados inseridos. \n \n Na primeira tela, digite os dados relevantes para o seu sistema, em seguida, toque no ícone "calcular" na barra superior 
+(à direita). Este, então, exibir um resumo das estimativas do produto. \n \n Note que há um monte de campos de entrada, de modo que a maneira mais fácil de 
+inserir dados é usar o botão "Next" acima do teclado - o que irá passar para o próximo campo, sem ter que dispensar o teclado e manualmente se deslocar para 
+o próximo campo. Se válido, os dados são guardados e restaurados quando você executar o aplicativo novamente (poupa um monte de digitação). \n \n 
+
+Se você estiver indo para o trabalho de inserir os dados, você provavelmente terá que fazer algo com ele! Para ajudar nesse sentido, o ícone "E-mail" resumirá 
+as entradas e as estimativas em um e-mail que você pode editar e enviar para qualquer endereço de e-mail.
 </string>
 
     <string name="helpCoolingTitle">Refrigeração Estimativas Água Produto</string>
     <string name="helpCooling">
-Este é um conjunto de telas que é essencialmente o mesmo que as telas de caldeira de água, mas para sistemas de arrefecimento de água \n \n 
+Este é um conjunto de telas que é essencialmente o mesmo que as telas de caldeira de água, mas para sistemas de arrefecimento de água 
+\n \n 
+Navegação e entrada de dados são semelhantes às telas de caldeira de água, e os dados também é restaurado a partir de uso anterior e e-mail pode ser enviado, se desejar.
 </string>
 
     <string name="helpAboutTitle">Quem Somos</string>
@@ -305,7 +349,13 @@ Esta tela fornece uma introdução ao Tratamento de Água Products, Inc.</string
 
     <string name="helpContactTitle">Fale Conosco</string>
     <string name="helpContact">
-Esta tela fornece uma variedade de informações de contato, incluindo: \n \n - site \n - telefone e de fax \n - vários endereços de e-mail \n - Centro de endereço \n \n Onde suportada pelo dispositivo, você pode tocar o campo apropriado para ativar esse método de comunicação, tais como o lançamento do navegador no site</string>
+Esta tela fornece uma variedade de informações de contato, incluindo: \n \n
+ - site \n - telefone e de fax \n
+  - vários endereços de e-mail \n
+  - Centro de endereço \n \n
+Onde suportada pelo dispositivo, você pode tocar no campo apropriado para ativar esse método de comunicação, tais como o lançamento do navegador no site, 
+ligando para o número de contato, iniciar um e-mail ou mostrar um mapa da localização do escritório.
+   </string>
 
     <string name="helpCopyrightTitle">Copyright</string>
     <string name="helpCopyright">

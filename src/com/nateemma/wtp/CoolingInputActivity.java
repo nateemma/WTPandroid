@@ -127,7 +127,12 @@ public class CoolingInputActivity extends Activity {
 
 	// routine to notify the user that there is an incomplete field
 	private void notifyInputError(){
-		Toast.makeText(getApplicationContext(), "Please enter all data", Toast.LENGTH_SHORT).show();
+		try{
+			String description = mContext.getResources().getString(R.string.inputError);
+			Toast.makeText(getApplicationContext(), description, Toast.LENGTH_SHORT).show();
+		} catch (Exception e){
+			Log.e(TAG, "Error displaying dialogue: "+e.toString());
+		}
 	}
 
 	// APP LOGIC
