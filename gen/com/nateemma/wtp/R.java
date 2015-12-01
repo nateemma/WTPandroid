@@ -291,10 +291,10 @@ public final class R {
  Steam Boiler Data Entry 
  ======================= 
  ======================= 
- Chaudi&#233;re &#233; Vapeur Data Entry 
- ======================= 
- ======================= 
  Steam Boiler Data Entry 
+ ======================= 
+ ======================= 
+ Chaudi&#233;re &#233; Vapeur Data Entry 
  ======================= 
  ======================= 
  Steam Boiler Data Entry 
@@ -311,11 +311,11 @@ public final class R {
         public static final int appVersion=0x7f060002;
         /**  ENGLISH 
  GERMAN 
- SPANISH 
- FRENCH VERSION 
- ITALIAN 
  DUTCH 
  POLISH 
+ FRENCH VERSION 
+ SPANISH 
+ ITALIAN 
  PORTUGUESE 
          */
         public static final int app_name=0x7f060000;
@@ -362,10 +362,10 @@ public final class R {
  Steam Boiler Liquids Product Estimates 
  ======================= 
  ======================= 
- Chaudi&#233;re &#233; Vapeur Liquids Product Estimates 
- ======================= 
- ======================= 
  Steam Boiler Liquids Product Estimates 
+ ======================= 
+ ======================= 
+ Chaudi&#233;re &#233; Vapeur Liquids Product Estimates 
  ======================= 
  ======================= 
  Steam Boiler Liquids Product Estimates 
@@ -391,10 +391,10 @@ public final class R {
  Steam Boiler Solids Product Estimates 
  ======================= 
  ======================= 
- Chaudi&#233;re &#233; Vapeur Solids Product Estimates 
- ======================= 
- ======================= 
  Steam Boiler Solids Product Estimates 
+ ======================= 
+ ======================= 
+ Chaudi&#233;re &#233; Vapeur Solids Product Estimates 
  ======================= 
  ======================= 
  Steam Boiler Solids Product Estimates 
@@ -526,11 +526,11 @@ public final class R {
  ======================= 
   
  ======================= 
- L\'eau de Refroidissement Data Entry (some re-use from above) 
+ Cooling Water Data Entry (some re-use from above) 
  ======================= 
   
  ======================= 
- Cooling Water Data Entry (some re-use from above) 
+ L\'eau de Refroidissement Data Entry (some re-use from above) 
  ======================= 
   
  ======================= 
@@ -594,10 +594,10 @@ public final class R {
  Cooling Water Solids Product Estimates 
  ======================= 
  ======================= 
- L\'eau de Refroidissement Solids Product Estimates 
- ======================= 
- ======================= 
  Cooling Water Solids Product Estimates 
+ ======================= 
+ ======================= 
+ L\'eau de Refroidissement Solids Product Estimates 
  ======================= 
  ======================= 
  Cooling Water Solids Product Estimates 
