@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners
+        android:radius="2dip"
+    />
+    <solid
+        android:color="@android:color/transparent"
+    />
+    <stroke
+        android:width="1dip"
+        android:color="#77A"
+   />
+</shape>
+<!-- From: file:/Users/pprice/Documents/AndroidStudioProjects/WTPandroid/app/src/main/res/drawable/stroked.xml -->
