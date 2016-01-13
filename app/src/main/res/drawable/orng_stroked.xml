@@ -3,11 +3,25 @@
 
     <corners android:radius="8dip" />
 
-    <gradient
+    <!--    <gradient
         android:angle="90"
-        android:endColor="@color/WTP_solid_orange"
-        android:startColor="@color/WTP_orange"
-         />
+        android:endColor="@color/WTP_orange"
+        android:startColor="@color/WTP_translucent_orange"
+        />
+            <gradient
+    android:angle="90"
+    android:endColor="@color/WTP_translucent_orange"
+    android:startColor="@color/WTP_solid_orange"
+    />
+
+    -->
+
+
+    <gradient
+        android:startColor="@color/WTP_mid_orange"
+        android:centerColor="@color/WTP_dark_orange"
+        android:endColor="@color/WTP_mid_orange"
+        android:angle="270" />
 
     <stroke
         android:width="2dip"
