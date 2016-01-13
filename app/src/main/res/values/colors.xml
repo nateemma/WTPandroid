@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="WTP_white">#CFCFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="translucent_white">#70ffffff</color>
     
     <color name="WTP_blue">#01378D</color>
     <color name="WTP_mid_blue">#0263FF</color>

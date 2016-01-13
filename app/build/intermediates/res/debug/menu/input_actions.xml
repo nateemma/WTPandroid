@@ -1,7 +1,0 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <!-- estimate, should appear as action button -->
-    <item android:id="@+id/action_estimate"
-          android:icon="@drawable/icon_calculator"
-          android:title="@string/action_estimate"
-          android:showAsAction="ifRoom" />
-</menu><!-- From: file:/Users/pprice/Documents/AndroidStudioProjects/WTPandroid/app/src/main/res/menu/input_actions.xml -->
