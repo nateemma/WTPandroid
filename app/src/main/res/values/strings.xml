@@ -2,10 +2,12 @@
 <resources>
 
     <!-- ENGLISH -->
-    
+
+    <string name="appVersion">v1.2.1</string>
+    <string name="appVersionCode">6</string>
+
     <string name="app_name">WTP Estimation Tools</string>
     <string name="action_settings">Settings</string>
-    <string name="appVersion">v1.2.1</string>
 
     <!-- ======================= -->
     <!-- Main Screen -->

@@ -12,7 +12,7 @@ ADDED from /Users/philprice95/Documents/workspace/WTPandroid/app/src/main/Androi
 		INJECTED from /Users/philprice95/Documents/workspace/WTPandroid/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/philprice95/Documents/workspace/WTPandroid/app/src/main/AndroidManifest.xml
 	android:versionCode
-		ADDED from /Users/philprice95/Documents/workspace/WTPandroid/app/src/main/AndroidManifest.xml:4:5-28
+		ADDED from /Users/philprice95/Documents/workspace/WTPandroid/app/src/main/AndroidManifest.xml:4:5-49
 		INJECTED from /Users/philprice95/Documents/workspace/WTPandroid/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/philprice95/Documents/workspace/WTPandroid/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
